@@ -1,7 +1,7 @@
 title: Elysée Aristide Houndetoungan
 email: ariel92and@gmail.com
 description: Welcome to my personal website. I am a Ph.D candidate in Economics at Laval University. My research is mainly focused on the Econometrics of Social Networks.
-url: "https://ahoundetoungan.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ahoundetoungan.com/"  # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ariel2299
 github_username:  ahoundetoungan
 theme: jekyll-theme-minimal
