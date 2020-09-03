@@ -153,7 +153,42 @@ header{
    text-decoration: none;
 }
 
+/* posts */
+.blog{
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 300px;
+}
+.blogpreamble {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
 
+.blogpreamble h1 {
+  font-size: 25px;
+  font-family: 'Merriweather';
+}
+
+.blogpreamble h2 {
+  font-size: 18px;
+  font-family: 'Merriweather';
+  font-weight:normal
+}
+
+
+.blogpreamble h3 {
+  font-size: 14px;
+  font-family: 'Merriweather';
+  font-weight:normal
+}
+
+.smallhr {
+  width:25%;
+  height:2px;
+  color:black;
+  background-color:black;
+}
 /* general style*/
 a {
   font-size: 16px;
@@ -200,10 +235,6 @@ strong {
   margin-right: 10%;
 }
 
-.contentpost{
-  margin-left: 10%;
-  margin-right: 0%;
-}
 #research2 li{
    font-size: 16px;
    color: #3A3A3A;
@@ -386,6 +417,24 @@ footer a{
   .box {
     width: 70%;
   }
+
+  .blog{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .blogpreamble h1 {
+    font-size: 22px;
+  }
+
+  .blogpreamble h2 {
+    font-size: 17px;
+  }
+
+
+  .blogpreamble h3 {
+    font-size: 14px;
+  }
 }
 
 
@@ -475,6 +524,25 @@ footer a{
   }
   .gmap_canvas {
     height:250px;
+  }
+
+
+  .blog{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .blogpreamble h1 {
+    font-size: 20px;
+  }
+
+  .blogpreamble h2 {
+    font-size: 16px;
+  }
+
+
+  .blogpreamble h3 {
+    font-size: 14px;
   }
 }
 
@@ -615,8 +683,6 @@ footer a{
   }
 
   .contentpost{
-    margin-left: 0%;
-    margin-right: 0%;
   }
 
   #research2 li{
