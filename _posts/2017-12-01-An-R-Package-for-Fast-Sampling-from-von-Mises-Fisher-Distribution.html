@@ -322,6 +322,7 @@ text-align: justify}
 <p><span class="math display">\[f_p(\mathbf{z}|\eta, \boldsymbol{\mu}) =C_p(\eta) e^{\eta\mathbf{z}&#39;\boldsymbol{\mu}},\]</span> where <span class="math inline">\(\displaystyle C_p(x) = \left(\frac{x}{2}\right)^{\frac{p}{2}-1}\frac{1}{\Gamma\left(\frac{p}{2}\right)I_{\frac{p}{2}-1}(x)}\)</span> is the normalization constant and <span class="math inline">\(I_.(.)\)</span> the Bessel function of the first kind defined by: <span class="math display">\[\displaystyle I_{\alpha}(x) = \sum_{m=0}^{\infty}\frac{\left(\frac{x}{2}\right)^{2m+\alpha}}{m!\Gamma(m+\alpha + 1)}.\]</span> The normalization with respect to the uniform distribution simplifies some results. For example, <span class="math inline">\(C_p(0)=1\)</span>.</p>
 </div>
 <div id="sim" class="section level2 unnumbered">
+<hr>
 <h3 class="unnumbered">Simulation from von Mises Fisher distribution</h3>
 <p>The following algorithm provides a rejecting sampling scheme for drawing a sample from the <span class="math inline">\(\mathcal{M}\)</span> with mean directional parameter <span class="math inline">\(\boldsymbol{\mu} = (0, ... , 0, 1)\)</span> and concentration (intensity) parameter <span class="math inline">\(\eta\)</span> ≥ 0 <span class="citation">(see Section 2.1 in Hornik and Grün <a href="#ref-hornik2014movmf" role="doc-biblioref">2014</a>)</span>.</p>
 <div id = "research2">
@@ -341,6 +342,7 @@ text-align: justify}
 <p>To get samples from <span class="math inline">\(\mathcal{M}\)</span> with arbitrary mean direction parameter <span class="math inline">\(\boldsymbol{\mu}\)</span>, <span class="math inline">\(X\)</span> is multiplied from the left with a matrix where the first <span class="math inline">\(d − 1\)</span> columns consist of unitary basis vectors of the subspace orthogonal to <span class="math inline">\(\boldsymbol{\mu}\)</span> and the last column is equal to <span class="math inline">\(\boldsymbol{\mu}\)</span>.</p>
 </div>
 <div id="vmf" class="section level2 unnumbered">
+<hr>
 <h3 class="unnumbered">Package Installation</h3>
 <p>The code source of the package is written in C++ with the package <strong>Rcpp</strong> <span class="citation">(Eddelbuettel et al. <a href="#ref-R-Rcpp" role="doc-biblioref">2020</a>)</span>. <strong>vMF</strong> is currently available on GitHub. Its installation requires to prior install <strong>devtools</strong> package <span class="citation">(Wickham, Hester, and Chang <a href="#ref-R-devtools" role="doc-biblioref">2020</a>)</span>. Moreover, Windows users should install Rtools compatible with their R version.</p>
 <p><strong>vMF</strong> package can be installed from this GitHub repos using the <code>install_github</code> function of <strong>devtools</strong>. All the dependencies will also be installed automatically.</p>
@@ -349,6 +351,7 @@ install_github(&quot;ahoundetoungan/vMF&quot;)</code></pre>
 <p>The option <code>build_vignettes = TRUE</code> can be added if one desires to install the vignettes.</p>
 </div>
 <div id="comp" class="section level2 unnumbered">
+<hr>
 <h3 class="unnumbered">Comparison of vMF and movMF</h3>
 <p>In this section, I compare <strong>vMF</strong> and <strong><a href="https://CRAN.R-project.org/package=movMF">movMF</a></strong>. First of all, I compare samples drawn from both packages to make sure that they are identical.</p>
 <pre class="r"><code>library(vMF)
@@ -458,6 +461,7 @@ benchmark(&quot;vMF&quot; = SamplevMF(1000), &quot;movMF&quot; = SamplemovMF(100
 <p>The comparison of the running times shows that <strong>vMF</strong> performs better.</p>
 </div>
 <div id="ref" class="section level2 unnumbered">
+  <hr>
 <h3 class="unnumbered">References</h3>
 <div id="refs" class="references hanging-indent">
 <div id="ref-boucher2019partial">
