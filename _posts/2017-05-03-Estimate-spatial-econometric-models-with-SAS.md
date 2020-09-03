@@ -1,5 +1,5 @@
 ---
-layout: menu
+layout: post
 title: "Estimate spatial econometric models with SAS"
 author:
   Elysée Aristide Houndetoungan
