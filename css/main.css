@@ -559,8 +559,8 @@ footer a{
 
 
   .blog{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 7%;
   }
 
   .blogpreamble h1 {
@@ -660,6 +660,8 @@ footer a{
     margin-left: 5%;
   }
 
+
+
   #more {display: none;}
 
   #myBtn {
@@ -714,6 +716,11 @@ footer a{
   }
 
   .contentpost{
+  }
+
+  .blog{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   #research2 li{
