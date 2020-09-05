@@ -8,14 +8,26 @@ $(document).ready(function() {
 });
 </script>
 
-<div class="npages" align="justify" id="blog">
-  <head align = "center">
+<div align="justify" id="blog">
+<div class="npagesblogtop">
+  <div class="title">
     <h2> Welcome to my Blog! </h2>
-  </head>
+  </div>
+  <div class="">
+    <p> This blog covers topics related to programming that can be useful in economics, statistic or finance.
+      I created this page because I love programming. The content of this page are either for real projects or just
+      for fun. My favorite software is <strong>R</strong> but I usually use to write my codes (for intensive computations)
+      using <strong>R</strong>  and <strong>C++</strong> together. I often build <strong>R</strong> packages for my research papers which develop new methods/models.
+      My latest packages include <a href="https://github.com/ahoundetoungan/PartialNetwork">PartialNetwork</a> (with <a href="https://www.vincentbouchereconomist.com/">Vincent Boucher</a>)
+      which aims to estimate peer effect models with partial network data and <a href="https://github.com/ahoundetoungan/CDatanet">CDatanet</a>
+      for estimating a count data model with social interactions (this package is related to my job market paper). Before starting research, I was a statistician engineer with
+      high interest in <strong>Statistical Analysis Software</strong> (SAS). You can find my <strong>SAS</strong> macros on <a href="https://www.developpez.net/forums/u760090/haache/">the developers club and IT Pro website</a>. This blog
+      contains more recent and complete work. You can also visit my <a href="https://github.com/ahoundetoungan">GitHub page</a> for more ressources.</p>
+  </div>
+    <hr>
+</div>
 
-
-  <h1>Blog Posts</h1>
-  <hr>
+<div class="npagesblog">
   <ul class="posts" id = "research2">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
