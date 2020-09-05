@@ -187,36 +187,6 @@ if (window.hljs) {
 
 
 <style type="text/css">
-h1 {
-  font-size: 17px;
-}
-h1.title {
-  font-size: 17px;
-}
-h2 {
-  font-size: 20px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 14px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-
-
-
-<style type="text/css">
 .main-container {
   margin-left: auto;
   margin-right: auto;
@@ -312,8 +282,8 @@ summary {
 body {
 text-align: justify}
 </style>
-<div id="over" class="section level2 unnumbered">
-<h3 class="unnumbered">Context</h3>
+<div >
+<h1> <strong id = "unnumbered"> Context </strong></h1>
 <p>I build an R package named <strong>vMF</strong> which samples from the von Mises-Fisher distribution (<span class="math inline">\(\mathcal{M}\)</span>) as <a href="https://CRAN.R-project.org/package=movMF"><strong>movMF</strong></a>. However, unlike the <a href="https://CRAN.R-project.org/package=movMF"><strong>movMF</strong></a> package <span class="citation">(Hornik and Grün <a href="#ref-R-movMF" role="doc-biblioref">2018</a>)</span> which also simulates and estimates mixtures of <span class="math inline">\(\mathcal{M}\)</span>, <strong>vFM</strong> instead focuses on fast sampling from <span class="math inline">\(\mathcal{M}\)</span>. The package also computes the density and the normalization constant of the von Mises-Fisher distribution.</p>
 <p>Note that <a href="https://CRAN.R-project.org/package=movMF"><strong>movMF</strong></a> is more general and can be used for many other purposes. It cannot be replaced by <strong>vMF</strong> which is more specific.</p>
 <p>The von Mises Fisher distribution is used to model coordinates on a hypersphere of dimension <span class="math inline">\(p \ge 2\)</span>. It can be considered as the equivalent of the normal distribution on a hypershpere. The von Mises Fisher distribution is characterized by two parameters. The location (or mean directional) parameter <span class="math inline">\(\boldsymbol{\mu}\)</span> around which simulations from the distribution will be concentrated and the intensity parameter <span class="math inline">\(\eta\)</span> which measures the intensity of concentration of the simulations around <span class="math inline">\(\boldsymbol{\mu}\)</span>. The higher <span class="math inline">\(\eta\)</span>, the more the simulations are concentrated around <span class="math inline">\(\boldsymbol{\mu}\)</span>. Comparing to the normal distribution, <span class="math inline">\(\boldsymbol{\mu}\)</span> is similar to the mean parameter of the normal distribution and <span class="math inline">\(\dfrac{1}{\eta}\)</span> is similar to the standard deviation.</p>
@@ -323,7 +293,7 @@ text-align: justify}
 </div>
 <div id="sim" class="section level2 unnumbered">
 <hr>
-<h3 class="unnumbered">Simulation from von Mises Fisher distribution</h3>
+<h1> <strong id = "unnumbered">Simulation from von Mises Fisher distribution</strong></h1>
 <p>The following algorithm provides a rejecting sampling scheme for drawing a sample from the <span class="math inline">\(\mathcal{M}\)</span> with mean directional parameter <span class="math inline">\(\boldsymbol{\mu} = (0, ... , 0, 1)\)</span> and concentration (intensity) parameter <span class="math inline">\(\eta \ge 0\)</span> <span class="citation">(see Section 2.1 in Hornik and Grün <a href="#ref-hornik2014movmf" role="doc-biblioref">2014</a>)</span>.</p>
 <div id = "research2">
   <ul>
@@ -343,7 +313,7 @@ text-align: justify}
 </div>
 <div id="vmf" class="section level2 unnumbered">
 <hr>
-<h3 class="unnumbered">Package Installation</h3>
+<h1> <strong id = "unnumbered">Package Installation</strong></h1>
 <p>The code source of the package is written in C++ with the package <strong>Rcpp</strong> <span class="citation">(Eddelbuettel et al. <a href="#ref-R-Rcpp" role="doc-biblioref">2020</a>)</span>. <strong>vMF</strong> is currently available on GitHub. Its installation requires to prior install <strong>devtools</strong> package <span class="citation">(Wickham, Hester, and Chang <a href="#ref-R-devtools" role="doc-biblioref">2020</a>)</span>. Moreover, Windows users should install Rtools compatible with their R version.</p>
 <p><strong>vMF</strong> package can be installed from this GitHub repos using the <code>install_github</code> function of <strong>devtools</strong>. All the dependencies will also be installed automatically.</p>
 <pre class="r"><code>library(devtools)
@@ -352,7 +322,7 @@ install_github(&quot;ahoundetoungan/vMF&quot;)</code></pre>
 </div>
 <div id="comp" class="section level2 unnumbered">
 <hr>
-<h3 class="unnumbered">Comparison of vMF and movMF</h3>
+<h1> <strong id = "unnumbered">Comparison of vMF and movMF</strong></h1>
 <p>In this section, I compare <strong>vMF</strong> and <strong><a href="https://CRAN.R-project.org/package=movMF">movMF</a></strong>. First of all, I compare samples drawn from both packages to make sure that they are identical.</p>
 <pre class="r"><code>library(vMF)
 library(movMF)
@@ -462,7 +432,7 @@ benchmark(&quot;vMF&quot; = SamplevMF(1000), &quot;movMF&quot; = SamplemovMF(100
 </div>
 <div id="ref" class="section level2 unnumbered">
   <hr>
-<h3 class="unnumbered">References</h3>
+<h1> <strong id = "unnumbered">References</strong></h1>
 <div id="refs" class="references hanging-indent">
 <div id="ref-boucher2019partial">
 <p>Boucher, Vincent, and Elysée Aristide Houndetoungan. 2020. “Estimating Peer Effects Using Partial Network Data.”</p>

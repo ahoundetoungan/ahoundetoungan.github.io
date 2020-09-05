@@ -217,6 +217,12 @@ h2 {
   font-size: 17px;
   font-family: 'Lato', 'Arial', 'Sans-Serif';
 }
+
+#unnumbered{
+  font-size: 20px;
+  font-family: 'Lato', 'Arial', 'Sans-Serif';
+  font-weight: "bold";
+}
 p {
     font-size: 16px;
     line-height: 1.9em;
@@ -507,6 +513,9 @@ footer a{
   h1 {
     font-size: 17px;
   }
+  #unnumbered{
+    font-size: 17px;
+  }
   h2 {
     font-size: 15px;
   }
@@ -678,6 +687,9 @@ footer a{
   h1 {
     font-size: 14px;
     align: 'center';
+  }
+  #unnumbered{
+    font-size: 14px;
   }
   h2 {
     font-size: 13px;
