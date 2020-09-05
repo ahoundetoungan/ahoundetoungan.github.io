@@ -265,14 +265,31 @@ strong {
 
 .npagesblogright{
   margin-right: 10%;
-  margin-left: 70%;
+  margin-left: 72%;
 }
 
+.npagesblogright p{
+  font-size: 13px;
+  line-height: 1em;
+  color: #555;
+  padding-bottom: 10px;
+}
+
+.npagesblogright a {
+  font-size: 13px;
+}
 .contentresearch{
   margin-left: 10%;
   margin-right: 10%;
 }
 
+#IMGblogRQC2019{
+  display: block;
+  margin-left: 7%;
+  margin-right: 7%;
+  width: 86%;
+  float: none;
+}
 
 #research2 li{
    font-size: 16px;
@@ -497,6 +514,25 @@ footer a{
   .blogpreamble h3 {
     font-size: 14px;
   }
+
+  .npagesblogcenter{
+    float:none;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .npagesblogright{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #IMGblogRQC2019{
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    float: none;
+  }
 }
 
 
@@ -507,6 +543,7 @@ footer a{
   .gmap_canvas {
     height:300px;
   }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -753,17 +790,6 @@ footer a{
     margin-right: 5%;
   }
 
-
-  .npagesblogcenter{
-    float:none;
-    margin-left: 5%;
-    width: 90%;
-  }
-
-  .npagesblogright{
-    margin-right: 2%;
-    margin-left: 5%;
-  }
   .contentresearch{
     margin-left: 0%;
     margin-right: 0%;
