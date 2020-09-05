@@ -28,9 +28,16 @@ $(document).ready(function() {
 </div>
 
 <div class="npagesblog">
-  <ul class="posts" id = "research2">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="npagesblogcenter">
+    <ul class="posts" id = "research2">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="npagesblogright">
+    <img id = "img" src="/photos/WithDB.webp" height="200">
+    <img id = "img" src="/photos/RQC2019.webp" height="200">
+  </div>
 </div>

@@ -247,15 +247,26 @@ strong {
   padding-bottom: 130px;
 }
 
+.npagesblog{
+  padding-bottom: 300px;
+}
+
 .npagesblogtop{
   margin-left: 10%;
   margin-right: 10%;
 }
 
-.npagesblog{
+
+.npagesblogcenter{
+  float: left;
   margin-left: 10%;
-  margin-right: 25%;
-  padding-bottom: 300px;
+  width: 50%;
+}
+
+
+.npagesblogright{
+  margin-right: 10%;
+  margin-left: 62%;
 }
 
 .contentresearch{
