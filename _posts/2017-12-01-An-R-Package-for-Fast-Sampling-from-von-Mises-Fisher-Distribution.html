@@ -293,7 +293,7 @@ text-align: justify}
 </div>
 <div id="sim" class="section level2 unnumbered">
 <hr>
-<h1> <strong id = "unnumbered">Simulation from von Mises Fisher distribution</strong></h1>
+<h3> <strong id = "unnumbered">Simulation from von Mises Fisher distribution</strong></h3>
 <p>The following algorithm provides a rejecting sampling scheme for drawing a sample from the <span class="math inline">\(\mathcal{M}\)</span> with mean directional parameter <span class="math inline">\(\boldsymbol{\mu} = (0, ... , 0, 1)\)</span> and concentration (intensity) parameter <span class="math inline">\(\eta \ge 0\)</span> <span class="citation">(see Section 2.1 in Hornik and Grün <a href="#ref-hornik2014movmf" role="doc-biblioref">2014</a>)</span>.</p>
 <div id = "research2">
   <ul>
@@ -314,7 +314,7 @@ text-align: justify}
 </div>
 <div id="vmf" class="section level2 unnumbered">
 <hr>
-<h1> <strong id = "unnumbered">Package Installation</strong></h1>
+<h3> <strong id = "unnumbered">Package Installation</strong></h3>
 <p>The code source of the package is written in C++ with the package <strong>Rcpp</strong> <span class="citation">(Eddelbuettel et al. <a href="#ref-R-Rcpp" role="doc-biblioref">2020</a>)</span>. <strong>vMF</strong> is currently available on GitHub. Its installation requires to prior install <strong>devtools</strong> package <span class="citation">(Wickham, Hester, and Chang <a href="#ref-R-devtools" role="doc-biblioref">2020</a>)</span>. Moreover, Windows users should install Rtools compatible with their R version.</p>
 <p><strong>vMF</strong> package can be installed from this GitHub repos using the <code>install_github</code> function of <strong>devtools</strong>. All the dependencies will also be installed automatically.</p>
 <pre class="r"><code>library(devtools)
@@ -323,7 +323,7 @@ install_github(&quot;ahoundetoungan/vMF&quot;)</code></pre>
 </div>
 <div id="comp" class="section level2 unnumbered">
 <hr>
-<h1> <strong id = "unnumbered">Comparison of vMF and movMF</strong></h1>
+<h3> <strong id = "unnumbered">Comparison of vMF and movMF</strong></h3>
 <p>In this section, I compare <strong>vMF</strong> and <strong><a href="https://CRAN.R-project.org/package=movMF">movMF</a></strong>. First of all, I compare samples drawn from both packages to make sure that they are identical.</p>
 <pre class="r"><code>library(vMF)
 library(movMF)
@@ -433,7 +433,7 @@ benchmark(&quot;vMF&quot; = SamplevMF(1000), &quot;movMF&quot; = SamplemovMF(100
 </div>
 <div id="ref" class="section level2 unnumbered">
   <hr>
-<h1> <strong id = "unnumbered">References</strong></h1>
+<h3> <strong id = "unnumbered">References</strong></h3>
 <div id="refs" class="references hanging-indent">
 <div id="ref-boucher2019partial">
 <p>Boucher, Vincent, and Elysée Aristide Houndetoungan. 2020. “Estimating Peer Effects Using Partial Network Data.”</p>
