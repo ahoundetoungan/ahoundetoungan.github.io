@@ -219,7 +219,7 @@ h2 {
 }
 
 #unnumbered{
-  font-size: 20px;
+  font-size: 22px;
   font-family: 'Lato', 'Arial', 'Sans-Serif';
   font-weight: "bold";
 }
@@ -514,7 +514,7 @@ footer a{
     font-size: 17px;
   }
   #unnumbered{
-    font-size: 18px;
+    font-size: 20px;
   }
   h2 {
     font-size: 15px;
@@ -689,7 +689,7 @@ footer a{
     align: 'center';
   }
   #unnumbered{
-    font-size: 16px;
+    font-size: 18px;
   }
   h2 {
     font-size: 13px;
