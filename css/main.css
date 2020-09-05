@@ -224,7 +224,7 @@ h2 {
   font-weight: "bold";
   line-height: 1.9em;
 }
-p {
+p, #share span {
     font-size: 16px;
     line-height: 1.9em;
     color: #3A3A3A;
@@ -585,7 +585,7 @@ footer a{
   h2 {
     font-size: 15px;
   }
-  p {
+  p, #share span{
       font-size: 15px;
   }
   strong {
@@ -762,10 +762,11 @@ footer a{
     align: 'center';
   }
 
-  p {
+  p, #share span  {
       font-size: 14px;
       line-height: 1.9em;
   }
+
   span.math {
     font-size: 13px;
   }
