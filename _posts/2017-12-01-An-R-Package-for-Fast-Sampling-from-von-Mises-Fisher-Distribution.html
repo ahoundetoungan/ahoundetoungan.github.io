@@ -301,8 +301,9 @@ text-align: justify}
 
 <p><span class="math display">\[b = \dfrac{p - 1}{2\eta + \sqrt{2\eta^2 + (p - 1)^2}}\]</span> Let <span class="math inline">\(x_0 = (1 - b)/(1 + b)\)</span> and <span class="math inline">\(c = \eta x_0 + (p - 1)\log\left(1 - x_0^2\right)\)</span>.</p>
 <li>Step 2. Generate</li>
-<p><span class="math inline">\(Z \sim Beta((p − 1)/2,(p − 1)/2)\)</span> and <span class="math inline">\(U ∼ Unif([0, 1])\)</span> and calculate
-<span class="math display">\[W = \dfrac{1 − (1 + b)Z}{1 − (1 − b)Z}.\]</span></p>
+<p><span class="math inline">\(Z \sim Beta((p − 1)/2,(p − 1)/2)\)</span> and</p>
+<p><span class="math inline">\(U ∼ Unif([0, 1])\)</span> and calculate</p>
+<p><span class="math display">\[W = \dfrac{1 − (1 + b)Z}{1 − (1 − b)Z}.\]</span></p>
 <li>Step 3. If</li>
 <p><span class="math display">\[\eta W + (p - 1)\log(1 - x_0W) - c &lt; \log(U),\]</span> go to step 2.</p>
 <li>Step 4. Generate a uniform <span class="math inline">\((d - 1)\)</span>-dimensional unit vector <span class="math inline">\(V\)</span> and return</li>
