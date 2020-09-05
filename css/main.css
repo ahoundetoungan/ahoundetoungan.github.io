@@ -525,14 +525,6 @@ footer a{
     margin-right: 5%;
     margin-left: 5%;
   }
-
-  #IMGblogRQC2019{
-    display: block;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    float: none;
-  }
 }
 
 
@@ -544,6 +536,14 @@ footer a{
     height:300px;
   }
 
+  #miniLscreenShow {display: none;}
+  #IMGblogRQC2019{
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    float: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
