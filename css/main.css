@@ -223,6 +223,9 @@ p {
     color: #3A3A3A;
     font-family: 'Lato', 'Arial', 'Sans-Serif';
 }
+span.math {
+  font-size: 14px;
+}
 li {
     margin: 0;
     line-height: 2cm;
@@ -684,6 +687,9 @@ footer a{
   p {
       font-size: 14px;
       line-height: 1.9em;
+  }
+  span.math {
+    font-size: 13px;
   }
   li {
       margin: 0;
