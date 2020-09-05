@@ -260,19 +260,19 @@ strong {
 .npagesblogcenter{
   float: left;
   margin-left: 10%;
-  width: 50%;
+  width: 60%;
 }
-
 
 .npagesblogright{
   margin-right: 10%;
-  margin-left: 62%;
+  margin-left: 70%;
 }
 
 .contentresearch{
   margin-left: 10%;
   margin-right: 10%;
 }
+
 
 #research2 li{
    font-size: 16px;
@@ -747,9 +747,23 @@ footer a{
   .npages{
     margin-left: 5%;
     margin-right: 5%;
-    padding-bottom: 300px;
+  }
+  .npagesblogtop{
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
+
+  .npagesblogcenter{
+    float:none;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .npagesblogright{
+    margin-right: 2%;
+    margin-left: 5%;
+  }
   .contentresearch{
     margin-left: 0%;
     margin-right: 0%;

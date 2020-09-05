@@ -34,10 +34,14 @@ $(document).ready(function() {
         <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
+    <div id="LscreenShow">
+      <hr>
+    </div>
+  </div>
+  <div class="npagesblogright">
+    <img src="/photos/RQC2019.webp" height="155">
+    <img src="/photos/WithDB.webp" height="155">
+
   </div>
 
-  <div class="npagesblogright">
-    <img id = "img" src="/photos/WithDB.webp" height="200">
-    <img id = "img" src="/photos/RQC2019.webp" height="200">
-  </div>
 </div>
