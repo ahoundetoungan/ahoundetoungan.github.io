@@ -27,10 +27,10 @@ header{
 
 .menu a {
   float: left;
-  padding: 10px;
+  padding: 5px;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   width: 20%; /* Five links of equal widths */
   text-align: center;
   border-left: 1px solid #fff;
@@ -62,14 +62,14 @@ header{
 }
 
 .title h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: Arial, sans-serif;
   font-weight: 400;
   line-height: 0.7;
 }
 
 .title h2 {
-  font-size: 25px;
+  font-size: 20px;
   font-family:  Arial, sans-serif;
   font-weight: 300;
 }
@@ -104,15 +104,15 @@ header{
 }
 
 .leftside h2 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .leftside p {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .leftside a {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* Image */
@@ -157,7 +157,7 @@ margin: 0;
 #more {display: none;}
 
 #myBtn {
-  font-size: 16px;
+  font-size: 15px;
   font-family: Arial, sans-serif;
   color: #3A3A3A;
 }
@@ -176,7 +176,7 @@ margin: 0;
   background-color: #10BBBB;
   font-family: Arial, sans-serif;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   text-align: center;
   border: none;
 }
@@ -199,19 +199,19 @@ margin: 0;
 }
 
 .blogpreamble h1 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .blogpreamble h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight:normal
 }
 
 
 .blogpreamble h3 {
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight:normal
 }
@@ -232,7 +232,7 @@ margin: 0;
 }
 /* general style*/
 a {
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   color: #00609A;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -243,29 +243,29 @@ a:hover {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h1 {
-  font-size: 20px;
+  font-size: 17px;
   font-family: Arial, sans-serif;
 }
 h2 {
-  font-size: 17px;
+  font-size: 15px;
   font-family: Arial, sans-serif;
   font-weight: 600;
 }
 
 #unnumbered{
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: "bold";
   line-height: 1em;
 }
 p, #share span {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.9em;
     color: #3A3A3A;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 span.math {
-  font-size: 14px;
+  font-size: 13px;
 }
 li {
     margin: 0;
@@ -327,7 +327,7 @@ strong {
 }
 
 #research2 li{
-   font-size: 16px;
+   font-size: 15px;
    color: #3A3A3A;
    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    line-height: 1.9em;
@@ -339,7 +339,7 @@ margin-bottom: 0cm;
 
 #readpaper {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 0em;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
@@ -408,7 +408,7 @@ footer a{
 }
 
 .rightcontact p {
-  font-size: 14px;
+  font-size: 13px;
 }
 #form{
   width: 100%;
@@ -439,7 +439,7 @@ footer a{
     margin-left: 1%;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color:#104e8B;
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -509,7 +509,7 @@ footer a{
   }
 
   .menu a {
-    font-size: 16px;
+    font-size: 15px;
   }
 
 
@@ -531,11 +531,11 @@ footer a{
   }
 
   .title h1 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .title h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .box {
@@ -548,16 +548,16 @@ footer a{
   }
 
   .blogpreamble h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .blogpreamble h2 {
-    font-size: 17px;
+    font-size: 15px;
   }
 
 
   .blogpreamble h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   #myaddressicon {
@@ -608,32 +608,32 @@ footer a{
 
   /*Menu*/
   .menu a {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .title h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .title h2 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   a {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   h1 {
-    font-size: 17px;
-  }
-  #unnumbered{
-    font-size: 20px;
-  }
-  h2 {
     font-size: 15px;
   }
+  #unnumbered{
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 14px;
+  }
   p, #share span{
-      font-size: 15px;
+      font-size: 14px;
   }
   strong {
       font-size:15px;
@@ -644,15 +644,15 @@ footer a{
   }
 
   #myBtn {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #research2 li{
-     font-size: 15px;
+     font-size: 14px;
    }
 
   #readpaper {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .leftcontact {
@@ -672,7 +672,7 @@ footer a{
   }
 
   #submit{
-      font-size: 14px;
+      font-size: 13px;
   }
 
   .mapouter{
@@ -689,16 +689,16 @@ footer a{
   }
 
   .blogpreamble h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .blogpreamble h2 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
 
   .blogpreamble h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 
@@ -720,7 +720,7 @@ footer a{
   .menu a {
     float: none;
     width: 100%; /* Five links of equal widths */
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #ccc;
@@ -732,7 +732,7 @@ footer a{
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     width: 100%; /* Five links of equal widths */
     text-align: center;
     background-color: #104e8B;
@@ -748,11 +748,11 @@ footer a{
   }
 
   .title h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .title h2 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #homepage{
@@ -790,19 +790,19 @@ footer a{
   #more {display: none;}
 
   #myBtn {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   a {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   h1 {
-    font-size: 14px;
+    font-size: 13px;
     align: 'center';
   }
   #unnumbered{
-    font-size: 18px;
+    font-size: 16px;
   }
   h2 {
     font-size: 13px;
@@ -810,7 +810,7 @@ footer a{
   }
 
   p, #share span  {
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.9em;
   }
 
@@ -833,7 +833,7 @@ footer a{
 
   .btn {
     padding: 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .npages{
@@ -862,11 +862,11 @@ footer a{
 
 
   #research2 li{
-     font-size: 14px;
+     font-size: 13px;
    }
 
   #readpaper {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   footer {
