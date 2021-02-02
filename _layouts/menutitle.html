@@ -1,13 +1,60 @@
----
-layout: menu
----
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+<!-- link to main stylesheet -->
+<link rel="stylesheet" type="text/css" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/css/academicons.css">
+<link href='https://fonts.googleapis.com/css?family=Tienne&display=swap' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lato&display=swap' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather&display=swap' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+</head>
+<body>
+<div  id="wrapper">
+<header>
+<a href="javascript:void(0);" id="mobileMenu" class="icon" onclick="myMenu()">
+  <i class="fa fa-bars"></i> Menu
+</a>
 <div class="title">
   <h1 style="color:black;"> Elysée Aristide Houndetoungan </h1>
+  <h2 style="color:gray;"> PhD Candidate in Economics at Laval University </h2>
+  <br/>
 </div>
+
+<div class="menu" id="Menu">
+  <a id='home' href="/"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a id='about' href="/about">About Me</a>
+  <a id='research' href="/research">Research</a>
+  <a id='teaching' href="/teaching">Teaching</a>
+  <a id='software' href="/software">Software/Codes</a>
+</div><!-- Menu-->
+
 </header>
 
 <main id="Main">
 	{{ content }}
 </main>
+
+ <footer id="footer">
+   <div class="leftfoot">
+     <ul>
+       <li><p>Email:</p> <a href="mailto:elysee-aristide.houndetoungan.1@ulaval.ca">elysee-aristide.houndetoungan.1@ulaval.ca</a></li>
+       <li><p>Affiliations:</p> <a href="https://www.fss.ulaval.ca/economique" target="_blank">ULaval</a><p>, </p> <a href="https://www.crrep.ca/" target="_blank">CRREP</a></li>
+       <li id="LscreenShow"><p>Address: Avenue des Sciences-Humaines, Québec (QC) G1V 0A6, Office 2145</p></li>
+     </ul>
+   </div><!-- leftfoot -->
+
+   <div class="rightfoot">
+     <br/>
+     <p>Copyright © 2020 Elysée Aristide Houndetoungan - All Rights Reserved.</p>
+   </div><!-- rightfoot -->
+</footer><!-- footer -->
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>
