@@ -12,8 +12,8 @@ body {
 }
 
 header{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 /*MENU AND TITLE*/
 /* menu */
@@ -99,8 +99,8 @@ header{
 
 .leftside {
   float: left;
-  margin-left: 10%;
-  width: 20%;
+  margin-left: 15%;
+  width: 25%;
 }
 
 .leftside h2 {
@@ -149,8 +149,8 @@ margin: 0;
 }
 
 .rightside {
-  margin-right: 10%;
-  margin-left: 32%;
+  margin-right: 15%;
+  margin-left: 42%;
   text-align: justify;
 }
 
@@ -277,8 +277,8 @@ strong {
 
 /* other pages*/
 .npages{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   padding-bottom: 130px;
 }
 
@@ -361,13 +361,13 @@ footer {
 
 .leftfoot {
   float: left;
-  margin-left: 10%;
+  margin-left: 15%;
   width: 45%;
 }
 
 .rightfoot {
   margin-right: 10%;
-  margin-left: 58%;
+  margin-left: 62%;
 }
 
 
@@ -487,6 +487,21 @@ footer a{
 #miniLscreenShow {display: none;}
 
 @media screen and (max-width: 1200px) {
+  header{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .npages{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 130px;
+  }
+
+
+
+
+
   .box {
     width: 60%;
   }
@@ -504,7 +519,7 @@ footer a{
 
   .leftside {
     float: left;
-    margin-left: 10%;
+    margin-left: 15%;
     width: 25%;
   }
 
@@ -514,8 +529,8 @@ footer a{
 
 
   .rightside {
-    margin-right: 10%;
-    margin-left: 37%;
+    margin-right: 15%;
+    margin-left: 42%;
   }
 
   #myaddress p{
@@ -529,6 +544,31 @@ footer a{
     margin-left: 7%;
     margin-right: 7%;
   }
+
+
+  .npages{
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-bottom: 130px;
+  }
+
+
+  .npagesblogcenter{
+    float: left;
+    margin-left: 7%;
+    width: 60%;
+  }
+
+  .npagesblogright{
+    margin-right: 7%;
+    margin-left: 69%;
+  }
+
+  .contentresearch{
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
 
   .title h1 {
     font-size: 24px;
@@ -574,12 +614,6 @@ footer a{
     height:300px;
   }
 
-  #miniLscreenShow {display: inline;}
-  .npagesblogtop{
-    margin-right: 7%;
-    margin-left: 7%;
-  }
-
   #IMGblogRQC2019{
     display: block;
     margin-left: 20%;
@@ -604,6 +638,26 @@ footer a{
   header{
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .npages{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .contentresearch{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .npagesblogcenter{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .npagesblogright{
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   /*Menu*/
@@ -655,15 +709,6 @@ footer a{
     font-size: 14px;
   }
 
-  .leftcontact {
-    float: none;
-    width: 100%;
-  }
-
-
-  .rightcontact {
-    margin-left: 0%;
-  }
 
 
   #message{
@@ -682,11 +727,6 @@ footer a{
     height:250px;
   }
 
-
-  .blog{
-    margin-left: 7%;
-    margin-right: 7%;
-  }
 
   .blogpreamble h1 {
     font-size: 17px;
@@ -841,25 +881,16 @@ footer a{
     margin-right: 5%;
     padding-bottom: 300px;
   }
-  .npagesblogtop{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
 
-  .contentresearch{
+  .contentresearch, .npagesblogright{
     margin-left: 0%;
     margin-right: 0%;
   }
 
-  .contentpost{
+  .npagesblogcenter{
+    margin-left: 0%;
+    width: 100%;
   }
-
-  .blog{
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 300px;
-  }
-
 
   #research2 li{
      font-size: 13px;
