@@ -518,19 +518,13 @@ footer a{
   }
 
   .leftside {
-    float: left;
-    margin-left: 15%;
-    width: 25%;
+    margin-left: 10%;
+    width: 27%;
   }
-
-  .menu a {
-    font-size: 15px;
-  }
-
 
   .rightside {
-    margin-right: 15%;
-    margin-left: 42%;
+    margin-right: 10%;
+    margin-left: 39%;
   }
 
   #myaddress p{
@@ -569,6 +563,16 @@ footer a{
     margin-right: 7%;
   }
 
+  .leftside {
+    margin-left: 7%;
+    width: 30%;
+  }
+
+
+  .rightside {
+    margin-right: 7%;
+    margin-left: 39%;
+  }
 
   .title h1 {
     font-size: 24px;
@@ -658,6 +662,17 @@ footer a{
   .npagesblogright{
     margin-right: 5%;
     margin-left: 5%;
+  }
+
+  .leftside {
+    margin-left: 5%;
+    width: 30%;
+  }
+
+
+  .rightside {
+    margin-right: 5%;
+    margin-left: 37%;
   }
 
   /*Menu*/
