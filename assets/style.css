@@ -386,7 +386,7 @@ footer ul li {
 }
 
 footer p{
-  font-size: 13px;
+  font-size: 12px;
   display: inline;
   line-height: 2em;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -394,7 +394,7 @@ footer p{
 }
 
 footer a{
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 2em;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -922,11 +922,11 @@ footer a{
   }
 
   footer p{
-    font-size: 12px;
+    font-size: 11px;
   }
 
   footer a{
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .leftfoot {
