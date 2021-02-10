@@ -363,11 +363,13 @@ footer {
   float: left;
   margin-left: 15%;
   width: 45%;
+  text-align: justify;
 }
 
 .rightfoot {
-  margin-right: 10%;
+  margin-right: 15%;
   margin-left: 62%;
+  text-align: justify;
 }
 
 
