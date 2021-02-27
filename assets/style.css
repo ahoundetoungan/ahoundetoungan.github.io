@@ -805,11 +805,11 @@ footer a{
   }
 
   .title h1 {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .title h2 {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   #homepage{
@@ -847,32 +847,32 @@ footer a{
   #more {display: none;}
 
   #myBtn {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   a {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   h1 {
-    font-size: 13px;
+    font-size: 14px;
     align: 'center';
   }
   #unnumbered{
-    font-size: 16px;
+    font-size: 18px;
   }
   h2 {
-    font-size: 13px;
+    font-size: 14px;
     align: 'center';
   }
 
   p, #share span  {
-      font-size: 13px;
+      font-size: 14px;
       line-height: 1.9em;
   }
 
   span.math {
-    font-size: 13px;
+    font-size: 14px;
   }
   li {
       margin: 0;
@@ -890,7 +890,7 @@ footer a{
 
   .btn {
     padding: 10px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .npages{
@@ -914,7 +914,7 @@ footer a{
    }
 
   #readpaper {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   footer {
@@ -922,11 +922,11 @@ footer a{
   }
 
   footer p{
-    font-size: 11px;
+    font-size: 13px;
   }
 
   footer a{
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .leftfoot {
