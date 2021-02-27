@@ -532,6 +532,17 @@ footer a{
   #myaddress p{
     font-size: 16px;
   }
+
+  .leftfoot {
+    margin-left: 10%;
+    width: 50%;
+    text-align: justify;
+  }
+
+  .rightfoot {
+    margin-right: 10%;
+    margin-left: 62%;
+  }
 }
 
 
@@ -608,6 +619,17 @@ footer a{
 
   #myaddressicon {
     padding-bottom: 0px;
+  }
+
+  .leftfoot {
+    margin-left: 7%;
+    width: 53%;
+    text-align: justify;
+  }
+
+  .rightfoot {
+    margin-right: 7%;
+    margin-left: 62%;
   }
 }
 
@@ -756,6 +778,17 @@ footer a{
 
   .blogpreamble h3 {
     font-size: 16px;
+  }
+
+  .leftfoot {
+    margin-left: 5%;
+    width: 55%;
+    text-align: justify;
+  }
+
+  .rightfoot {
+    margin-right: 5%;
+    margin-left: 62%;
   }
 }
 
@@ -922,11 +955,11 @@ footer a{
   }
 
   footer p{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   footer a{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .leftfoot {
