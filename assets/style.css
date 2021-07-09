@@ -30,7 +30,7 @@ header{
   padding: 5px;
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   width: 25%; /* Five links of equal widths */
   text-align: center;
   border-left: 1px solid #fff;
@@ -56,20 +56,20 @@ header{
 
 
 .title {
-  margin-top: 36px;
+  margin-top: 30px;
   text-align: center;
   overflow: hidden;
 }
 
 .title h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-family: Arial, sans-serif;
   font-weight: 400;
   line-height: 0.7;
 }
 
 .title h2 {
-  font-size: 24px;
+  font-size: 21px;
   font-family:  Arial, sans-serif;
   font-weight: 300;
 }
@@ -104,15 +104,15 @@ header{
 }
 
 .leftside h2 {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .leftside p {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .leftside a {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /* Image */
@@ -157,7 +157,7 @@ margin: 0;
 #more {display: none;}
 
 #myBtn {
-  font-size: 16px;
+  font-size: 13px;
   font-family: Arial, sans-serif;
   color: #3A3A3A;
 }
@@ -176,7 +176,7 @@ margin: 0;
   background-color: #10BBBB;
   font-family: Arial, sans-serif;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   border: none;
 }
@@ -199,19 +199,19 @@ margin: 0;
 }
 
 .blogpreamble h1 {
-  font-size: 24px;
+  font-size: 21px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .blogpreamble h2 {
-  font-size: 19px;
+  font-size: 17px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight:normal
 }
 
 
 .blogpreamble h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight:normal
 }
@@ -232,7 +232,7 @@ margin: 0;
 }
 /* general style*/
 a {
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: #00609A;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -243,36 +243,36 @@ a:hover {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h1 {
-  font-size: 20px;
+  font-size: 17px;
   font-family: Arial, sans-serif;
 }
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-family: Arial, sans-serif;
   font-weight: 600;
 }
 
 #unnumbered{
-  font-size: 22px;
+  font-size: 19px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: "bold";
   line-height: 1em;
 }
 p, #share span {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.9em;
     color: #3A3A3A;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 span.math {
-  font-size: 16px;
+  font-size: 14px;
 }
 li {
     margin: 0;
     line-height: 2cm;
 }
 strong {
-    font-size:19px;
+    font-size:16px;
 }
 
 /* other pages*/
@@ -304,14 +304,14 @@ strong {
 }
 
 .npagesblogright p{
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1em;
   color: #555;
   padding-bottom: 20px;
 }
 
 .npagesblogright a {
-  font-size: 16px;
+  font-size: 14px;
 }
 .contentresearch{
   margin-left: 10%;
@@ -327,7 +327,7 @@ strong {
 }
 
 #research2 li{
-   font-size: 16px;
+   font-size: 14px;
    color: #3A3A3A;
    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    line-height: 1.9em;
@@ -339,7 +339,7 @@ margin-bottom: 0cm;
 
 #readpaper {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 0em;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
@@ -386,7 +386,7 @@ footer ul li {
 }
 
 footer p{
-  font-size: 14px;
+  font-size: 12px;
   display: inline;
   line-height: 2em;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -394,7 +394,7 @@ footer p{
 }
 
 footer a{
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   line-height: 2em;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -410,7 +410,7 @@ footer a{
 }
 
 .rightcontact p {
-  font-size: 16px;
+  font-size: 14px;
 }
 #form{
   width: 100%;
@@ -441,7 +441,7 @@ footer a{
     margin-left: 1%;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color:#104e8B;
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -509,7 +509,7 @@ footer a{
   }
 
   .rightcontact p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .mapouter{
@@ -530,7 +530,7 @@ footer a{
   }
 
   #myaddress p{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .leftfoot {
@@ -588,11 +588,11 @@ footer a{
   }
 
   .title h1 {
-    font-size: 29px;
+    font-size: 26px;
   }
 
   .title h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .box {
@@ -614,7 +614,7 @@ footer a{
 
 
   .blogpreamble h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #myaddressicon {
@@ -701,35 +701,35 @@ footer a{
 
   /*Menu*/
   .menu a {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .title h1 {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .title h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   a {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
   #unnumbered{
-    font-size: 20px;
-  }
-  h2 {
     font-size: 17px;
   }
+  h2 {
+    font-size: 15px;
+  }
   p, #share span{
-      font-size: 17px;
+      font-size: 15px;
   }
   strong {
-      font-size:18px;
+      font-size:16px;
   }
 
   .box {
@@ -737,15 +737,15 @@ footer a{
   }
 
   #myBtn {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #research2 li{
-     font-size: 17px;
+     font-size: 15px;
    }
 
   #readpaper {
-    font-size: 17px;
+    font-size: 15px;
   }
 
 
@@ -756,7 +756,7 @@ footer a{
   }
 
   #submit{
-      font-size: 16px;
+      font-size: 14px;
   }
 
   .mapouter{
@@ -768,16 +768,16 @@ footer a{
 
 
   .blogpreamble h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .blogpreamble h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
   .blogpreamble h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .leftfoot {
@@ -810,7 +810,7 @@ footer a{
   .menu a {
     float: none;
     width: 100%; /* Five links of equal widths */
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #ccc;
