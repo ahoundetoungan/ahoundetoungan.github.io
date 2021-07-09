@@ -822,7 +822,7 @@ footer a{
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%; /* Five links of equal widths */
     text-align: center;
     background-color: #104e8B;
@@ -838,11 +838,11 @@ footer a{
   }
 
   .title h1 {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   .title h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #homepage{
@@ -880,39 +880,39 @@ footer a{
   #more {display: none;}
 
   #myBtn {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   a {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   h1 {
-    font-size: 17px;
+    font-size: 15px;
     align: 'center';
   }
   #unnumbered{
-    font-size: 22px;
+    font-size: 19px;
   }
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     align: 'center';
   }
 
   p, #share span  {
-      font-size: 17px;
+      font-size: 15px;
       line-height: 1.9em;
   }
 
   span.math {
-    font-size: 17px;
+    font-size: 15px;
   }
   li {
       margin: 0;
       line-height: 2cm;
   }
   strong {
-      font-size:17px;
+      font-size:15px;
   }
 
   /* Download */
@@ -923,7 +923,7 @@ footer a{
 
   .btn {
     padding: 10px;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .npages{
@@ -943,11 +943,11 @@ footer a{
   }
 
   #research2 li{
-     font-size: 16px;
+     font-size: 14px;
    }
 
   #readpaper {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   footer {
@@ -955,11 +955,11 @@ footer a{
   }
 
   footer p{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   footer a{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .leftfoot {
