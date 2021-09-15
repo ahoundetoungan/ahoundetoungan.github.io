@@ -22,6 +22,10 @@ sigma <- 0.5
 #' # y est ensuite généré comme y = b0 + b1 x X1 + b2 x X2 + rnorm(N, 0, sigma)
 y     <- b0 + b1*X1 + b2*X2 + rnorm(N, 0, sigma)
 
+#' # Des graphiques
+plot(X1, y)
+plot(X2, y)
+
 #' # Nous allons constituer la base de données.
 #' # La fonction data.frame permet d'assembler toutes les variables nécessaires dans une même base.
 
