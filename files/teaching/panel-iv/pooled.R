@@ -1,5 +1,5 @@
 rm(list = ls())
-#' Dans cette application, nous allons utiliser les données NLS disponible sur le site du cours.
+#' Dans cette application, nous allons utiliser les données NLS disponibles sur le site du cours.
 #' Dans un premier temps, nous allons télécharger la base de données et la sauvegarder dans 
 #' un dossier de travail. 
 #' Sur mon ordinateur, mon dossier de travail est "~/Dropbox/Teaching/Données de Panel et IV/Data"
