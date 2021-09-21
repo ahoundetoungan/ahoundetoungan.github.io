@@ -63,6 +63,7 @@ data  <- data %>% mutate(educ_num = as.numeric(educ))
 #' Nous allons également créer des variables muettes ou dummies, comme
 #' Femme, Vivant au Sud, Vivant dans un SMSA, Marié, noir, Fonctionnaire public, travailleur manuel
 #' age^2, education^2 pour capter des relations non-linéaires
+#' le logarithme du salaire
 data  <- data %>% mutate(femme     = (sex      == "FEMALE"),
                          sud       = (region   == "SOUTH"),
                          smsa      = (SMSA     == "Yes"),
@@ -70,13 +71,14 @@ data  <- data %>% mutate(femme     = (sex      == "FEMALE"),
                          noir      = (race     == "BLACK"),
                          fpub      = (work.cat == "GOVERNMENT"),
                          manue     = (occup %in% c("401 TO 575: 401-575 CRAFTSMEN,FOREMEN AND KINDRED", 
-                                               "740 TO 785: 740-785 LABORERS, EXCEPT FARM",
-                                               "801 TO 802: 801-802 FARMERS AND FARM MANAGERS",
-                                               "821 TO 824: 821-824 FARM LABORERS AND FOREMAN",
-                                               "901 TO 965: 901-965 SERVICE WORKERS, EXCEPT PRIVATE HOUSEHOLD",
-                                               "980 TO 984: 980-984 PRIVATE HOUSEHOLD")),
+                                                   "740 TO 785: 740-785 LABORERS, EXCEPT FARM",
+                                                   "801 TO 802: 801-802 FARMERS AND FARM MANAGERS",
+                                                   "821 TO 824: 821-824 FARM LABORERS AND FOREMAN",
+                                                   "901 TO 965: 901-965 SERVICE WORKERS, EXCEPT PRIVATE HOUSEHOLD",
+                                                   "980 TO 984: 980-984 PRIVATE HOUSEHOLD")),
                          age2      = age^2,
-                         educ_num2 = educ_num^2)
+                         educ_num2 = educ_num^2,
+                         lwage     = log(wage))
 
 #' Replacer NAs des variables muettes par FALSE
 data  <- data %>% replace_na(list(femme = FALSE, sud = FALSE, smsa = FALSE,
@@ -84,7 +86,7 @@ data  <- data %>% replace_na(list(femme = FALSE, sud = FALSE, smsa = FALSE,
                                   manue = FALSE))
 
 #'estimation du modèle pooled
-pooled1 <- lm(wage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked, 
+pooled1 <- lm(lwage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked, 
               data = data)
 summary(pooled1)
 
@@ -93,6 +95,6 @@ summary(pooled1)
 #' L'avantage de ce package est qu'il permet d'estimer d'autres modèles de panel, autres que le pooled.
 #' Ces modèles seront étudiés dans le chapitre 3.
 library(plm)
-pooled2 <- plm(wage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked, 
+pooled2 <- plm(lwage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked, 
                data = data, model = "pooling")
 summary(pooled2)
