@@ -1,7 +1,8 @@
 rm(list = ls())
 library(dplyr)
 library(tidyr)
-library(AER)
+library(AER)    # pour estimer des modèles avec variables instrumentales
+library(lmtest) # pour faire des tests de spécification
 #' Dans cette application, nous allons utiliser les données de Cornwell and Rupert (1988).
 #' Elles sont disponibles sur le site du cours.
 #' Nous pouvons directement charger la base de données depuis le site.
@@ -12,6 +13,8 @@ data_orig        <- as_tibble(data_orig)
 head(data_orig)
 
 #' Description de la base
+#' ID  = Individual's ID
+#' Year = Observation year
 #' EXP = years of full time work experience,
 #' WKS = weeks worked,
 #' OCC = 1 if blue-collar occupation, 0 if not,
@@ -71,3 +74,11 @@ tsls2         <- ivreg(formula     = WKS ~ LWAGE + ED + UNION + FEM,
                        instruments = ~ IND + SMSA + ED + UNION + FEM, 
                        data        = data_orig)
 summary(tsls2, diagnostics = TRUE)
+
+#' Test d'hétéroscédasticité
+bptest(tsls1) # on rejette H0 donc il y a hétéscédasticité. Les tests de significativités ci-dessus ne sont pas valides
+bptest(tsls2) # on rejette H0 donc il y a hétéscédasticité. Les tests de significativités ci-dessus ne sont pas valides
+
+#' Correction des variances (variances robustes)
+coeftest(tsls1, vcov = vcovHC)  
+coeftest(tsls2, vcov = vcovHC)
