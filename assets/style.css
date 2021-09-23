@@ -243,6 +243,13 @@ a:hover {
     color: #0080BA;
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #3A3A3A;
+}
+a.abled {
+}
 h1 {
   font-size: 17px;
   font-family: Arial, sans-serif;
