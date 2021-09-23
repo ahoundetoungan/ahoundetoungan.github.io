@@ -28,6 +28,11 @@ head(data_orig)
 #' BLK = 1 if the individual is black, 0 if not.
 #' LWAGE = logarithm of the wage
 
+#' Nombre d'individus 
+length(unique(data_orig$ID))
+#' Nombre de pétiodes
+table(data_orig$YEAR)
+
 #' Ajout des variables Expérience au carré et Education au carré
 data_orig     <- data_orig %>% mutate(EXP2 = EXP^2, ED2 = ED^2)
 
