@@ -76,8 +76,8 @@ tsls2         <- ivreg(formula     = WKS ~ LWAGE + ED + UNION + FEM,
 summary(tsls2, diagnostics = TRUE)
 
 #' Test d'hétéroscédasticité
-bptest(tsls1) # on rejette H0 donc il y a hétéscédasticité. Les tests de significativités ci-dessus ne sont pas valides
-bptest(tsls2) # on rejette H0 donc il y a hétéscédasticité. Les tests de significativités ci-dessus ne sont pas valides
+bptest(tsls1) # on rejette H0 donc il y a hétéroscédasticité. Les tests de significativité ci-dessus ne sont pas valides
+bptest(tsls2) # on rejette H0 donc il y a hétéroscédasticité. Les tests de significativité ci-dessus ne sont pas valides
 
 #' Correction des variances (variances robustes)
 coeftest(tsls1, vcov = vcovHC)  
