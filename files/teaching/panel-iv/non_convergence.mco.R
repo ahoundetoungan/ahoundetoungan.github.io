@@ -1,4 +1,4 @@
-#' Nous allons montrer que la méthode des MCO ne fonctionne bien lorsque H3 n'est pas vérifiée
+#' Nous allons montrer que la méthode des MCO ne fonctionne pas lorsque H3 n'est pas vérifiée
 #' Pour ce faire, nous allons nous mettre dans un contexte théorique comme dans le TP convergence.mco.R.
 #' Nous allons simuler des données de sorte qu'une variable explicative soit endogène.
 #' Ensuite, nous allons utiliser les données générées et estimer le modèle avec la méthode des MCO.
