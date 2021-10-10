@@ -82,3 +82,11 @@ bptest(tsls2) # on rejette H0 donc il y a hétéroscédasticité. Les tests de s
 #' Correction des variances (variances robustes)
 coeftest(tsls1, vcov = vcovHC)  
 coeftest(tsls2, vcov = vcovHC)
+
+#' GMM optimal
+#' Instrument Z1
+gmmOpt1   <- gmm(WKS ~ LWAGE + ED + UNION + FEM , x = ~ IND + ED + UNION + FEM, data = data_orig, wmatrix = "optimal")
+summary(gmmOpt1)
+#' Instrument Z2
+gmmOpt2   <- gmm(WKS ~ LWAGE + ED + UNION + FEM , x = ~ IND + SMSA + ED + UNION + FEM, data = data_orig, wmatrix = "optimal")
+summary(gmmOpt2)
