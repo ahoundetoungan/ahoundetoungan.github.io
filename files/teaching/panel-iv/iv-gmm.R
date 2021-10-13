@@ -2,6 +2,7 @@ rm(list = ls())
 library(dplyr)
 library(tidyr)
 library(AER)    # pour estimer des modèles avec variables instrumentales
+library(gmm)    # permet d'estimer le modèle avec la méthode GMM
 library(lmtest) # pour faire des tests de spécification
 #' Dans cette application, nous allons utiliser les données de Cornwell and Rupert (1988).
 #' Elles sont disponibles sur le site du cours.
