@@ -3,6 +3,7 @@ library(dplyr)
 library(tidyr)
 library(plm)
 library(ggplot2) # pour faire des graphiques
+library(lmtest)
 #' Dans cette application, nous allons utiliser les données de Cornwell and Rupert (1988).
 #' Elles sont disponibles sur le site du cours.
 #' Nous pouvons directement charger la base de données depuis le site.
@@ -30,16 +31,52 @@ head(data_orig)
 
 #' Nombre d'individus 
 length(unique(data_orig$ID))
-#' Nombre de pétiodes
+#' Nombre d'individus par période, On peut remarquer qu'il s'agit d'un panel cylindré.
 table(data_orig$YEAR)
 
+#'------------------- Graphiques
+#' On sélectionne de façon aléatoire 100 individus et on regarde l'évolution de leur salaire dans le temps.
+set.seed(2021)
+ggplot(data = data_orig %>% filter(ID %in% sample(unique(ID), 100)), aes(x = YEAR, y = LWAGE, colour = ID)) +
+  geom_line()
+
+#' Sans la légende
+ggplot(data = data_orig %>% filter(ID %in% sample(unique(ID), 100)), aes(x = YEAR, y = LWAGE, colour = ID)) +
+  geom_line() + theme(legend.position = "none")
+
+#' 60 Hommes et 60 Femmes
+#' on construit d'abord la variable sexe
+data_orig     <- data_orig %>% mutate(sexe = factor(FEM, labels = c("Homme", "Femme")))
+
+#' On sélectionne 60 parce qu'il y a seulement 67 femmes
+table(data_orig$sexe[!duplicated(data_orig$ID)])
+
+ggplot(data = data_orig %>% group_by(sexe) %>% filter(ID %in% sample(unique(ID), 60)), aes(x = YEAR, y = LWAGE, colour = ID)) +
+  geom_line() + facet_grid(cols = vars(sexe)) + theme(legend.position = "none")
+
+#' maximum 100 individus par sexe et par région
+#' on construit d'abord la variable region en utilisant les SMSA
+data_orig     <- data_orig %>% mutate(region = factor(SMSA, labels = c("Hors SMSA", "SMSA")))
+
+ggplot(data = data_orig %>% group_by(sexe, region) %>% filter(ID %in% sample(unique(ID), min(100, length(unique(ID))))), 
+       aes(x = YEAR, y = LWAGE, colour = ID)) + geom_line() + facet_grid(cols = vars(sexe, region)) +
+  theme(legend.position = "none")
+
+#' Type de contrat 
+#' on construit d'abord la variable region en utilisant SMSA
+data_orig     <- data_orig %>% mutate(contrat = factor(UNION, labels = c("individuel", "groupe")))
+
+ggplot(data = data_orig %>% group_by(contrat) %>% filter(ID %in% sample(unique(ID), 100)), aes(x = YEAR, y = LWAGE, colour = ID)) +
+  geom_line() + facet_grid(cols = vars(contrat)) + theme(legend.position = "none")
+
+#' par sexe et par type de contrat
+ggplot(data = data_orig %>% group_by(sexe, contrat) %>% filter(ID %in% sample(unique(ID), min(100, length(unique(ID))))), 
+       aes(x = YEAR, y = LWAGE, colour = ID)) + geom_line() + facet_grid(cols = vars(sexe, contrat)) + 
+  theme(legend.position = "none")
+
+#'------------------- Estimations
 #' Ajout des variables Expérience au carré et Education au carré
 data_orig     <- data_orig %>% mutate(EXP2 = EXP^2, ED2 = ED^2)
-
-#' Graphique
-#' On sélectionne de façon aléatoire 20 individus
-ggplot(data = data_orig %>% filter(ID %in% sample(ID, 20)), aes(x = YEAR, y = LWAGE, colour = ID)) +
-  geom_line()
 
 #' Modèle pooled
 pooled        <- plm(LWAGE ~ ED + ED2 + EXP + EXP2 + WKS + OCC + IND + SOUTH + SMSA + MS + UNION + FEM + BLK,
@@ -55,9 +92,9 @@ summary(between)
 fixed         <- plm(LWAGE ~ -1 + ED + ED2 + EXP + EXP2 + WKS + OCC + IND + SOUTH + SMSA + MS + UNION + FEM + BLK,
                      data = data_orig,  index = c("ID", "YEAR"), model="within")  
 #' remarquer qu'il y a -1 dans la formule
-summary(fixed) # Le coefficient de certaines variables n'a pas pu être calculé (Problème d'identification)
+summary(fixed) # Les coefficients de certaines variables n'ont pas pu être calculés (Problème d'identification).
 
-#' # Une autre manière d'estimer le modèle à effets fixe est d'estimer pooling avec des variables muettes individuelles.
+#' # Une autre manière d'estimer le modèle à effets fixes est d'estimer pooling avec des variables muettes individuelles.
 fixed.prime   <- plm(LWAGE ~ -1 + ED + ED2 + EXP + EXP2 + WKS + OCC + IND + SOUTH + SMSA + MS + UNION + FEM + BLK + factor(ID),
                      data = data_orig,  index = c("ID", "YEAR"), model="pooling")  
 summary(fixed.prime) # C'est plus intéressant comme présentation car le coefficient de l'éducation est calculé. Expliquer cette différence.
@@ -65,7 +102,7 @@ summary(fixed.prime) # C'est plus intéressant comme présentation car le coeffi
 #' Première différence
 FDiff         <- plm(LWAGE ~ -1 + ED + ED2 + EXP + EXP2 + WKS + OCC + IND + SOUTH + SMSA + MS + UNION + FEM + BLK,
                      data = data_orig,  index = c("ID", "YEAR"), model="fd") # remarquer le -1 dans la formule
-summary(FDiff) # Le coefficient de certaines variables n'a pas pu être calculé (Problème d'identification)
+summary(FDiff) # Les coefficients de certaines variables n'ont pas pu être calculés (Problème d'identification).
 
 #' Effets aléatoires
 random        <- plm(LWAGE ~ ED + ED2 + EXP + EXP2 + WKS + OCC + IND + SOUTH + SMSA + MS + UNION + FEM + BLK,
@@ -105,7 +142,7 @@ plmtest(pooled, c("individual"), type=("bp")) # on rejette l'hypothèse nulle d'
 #' ETAPE 2: A cette étape, on sait que le modèle pooled ne sera pas considéré (deux tests l'ont confirmé). 
 #' On se pose donc la question de savoir si l'hétérogénéité individuelle est fixe ou aléatoire
 #' Nous allons comparer fixed avec random (test de Hausman)
-phtest(fixed, random) # un modèle ne converge pas, c'est sans doute les effets aléatoires. Les effets sont donc fixes
+phtest(fixed, random) # un modèle ne converge pas, c'est sans doute celui avec les effets aléatoires. Les effets sont donc fixes
 
 #' ETAPE 3: On sait maintenant que les effets sont fixes. Le modèle random est aussi rejeté.
 #' Il faut donc comparer les effets individuels fixes à effets fixes individuels et temporels (twoways fixed effects)
@@ -120,6 +157,7 @@ pFtest(twoways.prime, fixed) # on peut aussi faire le test avec twoways.prime
 plmtest(fixed, c("time"), type = ("bp"))
 
 #' Le modèle à garder est donc le modèle twoways.
+
 #' Une question importante. Est-ce que la variance est robuste?
 #' On teste d'abord s'il y a autocorrélation des erreurs.
 pbgtest(twoways)  # Oui les erreurs sont autocorrélées
@@ -135,7 +173,7 @@ coeftest(twoways.prime, vcovHC) # Variances robustes à l'autocorrélation et l'
 
 #' Si la taille d'échantillon (dimension individuelle) est faible comme dans notre cas,
 #' on ignore parfois l'autocorrélatoin et on traite seulement l'hétéroscédasticité comme ci-dessous.
-coeftest(twoways, vcovHC(random, type = "HC3"))
+coeftest(twoways.prime, vcovHC(twoways.prime, type = "HC3"))
 
 #' Dans une certaine mesure, on peut aussi garder le modèle à effets fixes (one way).
 #' En effet, dans le twoway, les tests montrent que l'ensemble des périodes compte.
@@ -146,20 +184,4 @@ coeftest(twoways, vcovHC(random, type = "HC3"))
 pbgtest(fixed)  # Oui les erreurs sont autocorrélées
 bptest(fixed)   # Il y a aussi hétéroscédasticité
 coeftest(fixed, vcovHC) # Variances robustes à l'autocorrélation et l'hétéroscédasticité.
-coeftest(fixed, vcovHC(random, type = "HC3")) # Variances seulement robustes à l'hétéroscédasticité.
-
-
-
-#########################################################################################################
-#' # Panel dynamique
-rm(list = ls())
-#' Dans certains modèles (généralement en macroéconomie), la variable dépendante peut dépendre de son passé.
-#' Ces modèles peuvent être estimés en utilisant la fonction dpd du package dynpanel
-library(dynpanel)
-data(Produc)   # Des données qui sont fournies avec le package
-? Produc     # Pour en savoir plus sur les variables
-
-#' p = 1 est le nombre de retards de la variable dépendante
-#' meth = 4 correspond à Estimation GMM Arellano Bond (1991) 
-reg <- dpd(log(gsp) ~ log(pcap) + log(pc) + log(emp) + unemp,Produc,index=c("state","year"), p = 1, meth = 4)
-summary(reg)
+coeftest(fixed, vcovHC(fixed, type = "HC3")) # Variances seulement robustes à l'hétéroscédasticité.
