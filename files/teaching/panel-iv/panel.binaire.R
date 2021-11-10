@@ -3,6 +3,8 @@ library(dplyr)
 library(tidyr)
 library(pglm)
 library(ggplot2)
+library(lme4)
+library(bife)
 #' Dans cette application, nous allons utiliser les données German Health Care, 
 #' Ce sont des données de panel non équilibré, Panel disponibles sur le site du cours.
 #' Nous pouvons directement charger la base de données depuis le site.
@@ -60,22 +62,50 @@ data_orig <- data_orig %>% mutate(visite = ifelse(docvis > 0, 1, 0))
 #' Comme dans le cas du modèle linéaire, le modèle binaire peut être aussi pooled.
 #' la distribution des erreurs peut être normale (modèle probit)
 #' ou logistique (modèle logit)
-pooled.norm  <- pglm(visite ~ age + hhninc + hhkids + educ + married, family = binomial('probit'),
+pooled.probit  <- pglm(visite ~ age + hhninc + hhkids + educ + married, family = binomial('probit'),
                      model = "pooling", index = c("id", "year"), data = data_orig)
-summary(pooled.norm)
+summary(pooled.probit)
 
-pooled.logi  <- pglm(visite ~ age + hhninc + hhkids + educ + married, family = binomial('logit'),
+pooled.logit   <- pglm(visite ~ age + hhninc + hhkids + educ + married, family = binomial('logit'),
                      model = "pooling", index = c("id", "year"), data = data_orig)
-summary(pooled.logi)
+summary(pooled.logit)
 
-#' modèle à effets aléatoires
-random.norm  <- pglm(visite ~ age + hhninc + hhkids + educ + married, family = binomial('probit'),
-                     model = "random", index = c("id", "year"), effect = "individual",
-                     data = data_orig)
-summary(random.norm)
+#' Malheureusement, la fonction pglm ne permet pas d'estimer avec effets fixes
+#' Nous faisons recourt à une autre function (glmer) du package lme4, 
+#' Model à effets aléatoires. La partie (1 | id) indique que l'intercept varie en fonction de l'id.
+#' Avec la condition effets aléatoires
+#' Modèle probit
+random.probit  <- glmer(visite ~ age + hhninc + hhkids + educ + married + (1 | id), family = binomial('probit'),
+                        data = data_orig)
+summary(random.probit)
 
-random.logi  <- pglm(visite ~ age + hhninc + hhkids + educ + married, family = binomial('logit'),
-                     model = "random", index = c("id", "year"), effect = "individual",
-                     data = data_orig)
-summary(random.logi)
+#' Modèle logit
+random.logit   <- glmer(visite ~ age + hhninc + hhkids + educ + married + (1 | id), family = binomial('logit'),
+      data = data_orig)
+summary(random.logit)
 
+#' Effets fixes
+#' Nous utilisons la fonction bife du package bife
+fixed.probit   <- bife(visite ~ age + hhninc + hhkids + educ + married | id, data = data_orig, model = "probit")
+fixed.logit    <- bife(visite ~ age + hhninc + hhkids + educ + married | id, data = data_orig, model = "logit")
+
+#' Comme nous l'avons vu en cours, les modèles non linéaires ne sont pas convergents car ils souffrent
+#' d'un problème de paramètres incidents. La vraisemblance de chamberlain peut être utilisée seulement dans 
+#' le cas des modèles logit. Toutefois, l'estimation pécédende n'utilise pas la vraisemblance de chamberlain
+#' Ils sont tous biaisés 
+#' Les auteurs du package bike ont proposé une méthode de correction du biais. Cette méthode fonctionne
+#' avec le modèle probit et le modèle logit
+#' Modèle probit
+fixed.probit.c <- bias_corr(fixed.probit)
+summary(fixed.probit.c)
+
+#' Modèle logit
+fixed.logit.c  <- bias_corr(fixed.logit)
+summary(fixed.logit.c)
+
+#' Effets marginaux
+#' Modèle probit
+summary(get_APEs(fixed.probit.c))
+
+#' Modèle plogit
+summary(get_APEs(fixed.logit.c))
