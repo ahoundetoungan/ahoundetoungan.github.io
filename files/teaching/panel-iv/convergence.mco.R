@@ -1,15 +1,15 @@
 #' Nous allons montrer que la méthode des MCO fonctionne bien lorsque les hypothèses sont vérifiées
 #' Pour ce faire, nous allons nous mettre dans un contexte théorique.
 #' Nous n'allons pas utiliser des données réelles. Mais nous allons les simuler.
-#' En simulant les données, nous avons la possibilité de définir nous-même la 
+#' En simulant les données, nous avons la possibilité de définir nous-mêmes la 
 #' valeur des coefficients beta et sigma. 
 #' Ensuite, nous allons utiliser les données générées et estimer le modèle avec la méthode des MCO.
-#' L'objectif de comparer les valeurs estimées aux paramètres que nous avons définis
+#' L'objectif est de comparer les valeurs estimées aux paramètres que nous avons définis
 
 #' Génération des données
-N  <- 500 # taille de l'échantillon
+N  <- 1000  # taille de l'échantillon
 #' # Deux variables explicatives
-set.seed(2021)
+set.seed(2022)
 X1 <- rnorm(N, 0, 1)
 X2 <- rpois(N, 2)
 
@@ -20,7 +20,8 @@ b2    <- -1.2
 sigma <- 0.5
 
 #' # y est ensuite généré comme y = b0 + b1 x X1 + b2 x X2 + rnorm(N, 0, sigma)
-y     <- b0 + b1*X1 + b2*X2 + rnorm(N, 0, sigma)
+epsln <- rnorm(N, 0, sigma) # epsilon
+y     <- b0 + b1*X1 + b2*X2 + epsln
 
 #' # Des graphiques
 plot(X1, y)
@@ -37,7 +38,7 @@ rm(list = ls()[ls() != "base"])
 
 #' # Nous allons ensuite estimer le modèle par MCO en utilisant la commande lm
 
-model <- lm(y ~ X1 + X2, data = base)
+model <- lm(y ~ 1 + X1 + X2, data = base)
 summary(model)
 
 #' # En augmentant la taille de l'échantillon, on peut remarquer que les valeurs estimées

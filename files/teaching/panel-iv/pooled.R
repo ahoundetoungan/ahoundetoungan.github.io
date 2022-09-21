@@ -1,36 +1,37 @@
 rm(list = ls())
 #' Dans cette application, nous allons utiliser les données NLS disponibles sur le site du cours.
-#' Dans un premier temps, nous allons télécharger la base de données et la sauvegarder dans 
-#' un dossier de travail. 
+#' Dans un premier temps, nous allons télécharger la base de données et la sauvegarder dans
+#' un dossier de travail.
 #' Sur mon ordinateur, mon dossier de travail est "~/Dropbox/Teaching/Données de Panel et IV/Data"
-#' 
-#' ATTENTION, si vous travaillez sous Windows, il faudra changer les "\" du chemin vers votre dossier de travail 
+#'
+#' ATTENTION, si vous travaillez sous Windows, il faudra changer les "\" du chemin vers votre dossier de travail
 #' par des "/". En effet, R ne reconnait pas "\" dans un chemin.
-#' 
-#' 
+#'
+#'
 #' Nous allons ensuite définir notre dossier de travail dans R
-setwd("~/Dropbox/Teaching/Données de Panel et IV/Data")
+setwd("C:/Users/wb562248/Downloads")
 
 #' Etant donné que la base de données est dans le dossier de travail, on peut l'importer
 #' R peut importer plusieurs types de données, .xlsx, .csv, .dat, .RDS, .RDA etc.
 #' Dans cette application, les données sont sous format RDS. Nous utilisons donc la fonction readRDS
 
-data_origin    <- readRDS("NLSData.RDS") 
+data_origin    <- readRDS("NLSData.RDS")
 
+#' Une autre méthode pour importer les données.
 #' Nous pouvons aussi charger la base de données directement depuis mon site sans la télécharger.
 
-datatmp        <- readRDS(url("https://ahoundetoungan.com/files/teaching/panel-iv/NLSData.RDS")) 
-rm(list = "datatmp") # Nous allons garder une seule base de données dans la mémoire au risque de la surcharger
+data_origin    <- readRDS(url("https://ahoundetoungan.com/files/teaching/panel-iv/NLSData.RDS"))
 
 #' Visualiser quelques lignes
 head(data_origin)
 #' Plus de 355000 individus, avec beaucoup de données manquantes.
 #' Nous allons restreindre l'analyse sur la période 1979-1985
 
-#' Actuellement, notre base de données est un data.frame standard. 
+#' Actuellement, notre base de données est un data.frame standard.
 #' La librairie dplyr offre plusieurs outils pour manipuler facilement une base de données.
 #' Mais il faut que cette base soit dans un format spécial qui est tibble.
 #' Nous allons d'abord charger la librairie dplyr
+#' install.packages(c("dplyr", "tidyr"))
 library(dplyr) # veuillez l'installer si vous ne l'avez pas encore.
 library(tidyr) # Il faut aussi charger cette librairie qui offre des fonctions supplémentaires
 
@@ -70,7 +71,7 @@ data  <- data %>% mutate(femme     = (sex      == "FEMALE"),
                          marie     = (marital  == "MARRIED"),
                          noir      = (race     == "BLACK"),
                          fpub      = (work.cat == "GOVERNMENT"),
-                         manue     = (occup %in% c("401 TO 575: 401-575 CRAFTSMEN,FOREMEN AND KINDRED", 
+                         manue     = (occup %in% c("401 TO 575: 401-575 CRAFTSMEN,FOREMEN AND KINDRED",
                                                    "740 TO 785: 740-785 LABORERS, EXCEPT FARM",
                                                    "801 TO 802: 801-802 FARMERS AND FARM MANAGERS",
                                                    "821 TO 824: 821-824 FARM LABORERS AND FOREMAN",
@@ -86,7 +87,7 @@ data  <- data %>% replace_na(list(femme = FALSE, sud = FALSE, smsa = FALSE,
                                   manue = FALSE))
 
 #'estimation du modèle pooled
-pooled1 <- lm(lwage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked, 
+pooled1 <- lm(lwage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked,
               data = data)
 summary(pooled1)
 
@@ -95,6 +96,6 @@ summary(pooled1)
 #' L'avantage de ce package est qu'il permet d'estimer d'autres modèles de panel, autres que le pooled.
 #' Ces modèles seront étudiés dans le chapitre 3.
 library(plm)
-pooled2 <- plm(lwage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked, 
+pooled2 <- plm(lwage ~ educ_num + educ_num2 + age + age2 + femme + sud + smsa + marie + noir + fpub + manue + week_worked,
                data = data, model = "pooling")
 summary(pooled2)
