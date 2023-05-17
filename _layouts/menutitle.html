@@ -17,18 +17,19 @@
 <a href="javascript:void(0);" id="mobileMenu" class="icon" onclick="myMenu()">
   <i class="fa fa-bars"></i> Menu
 </a>
-<div class="title">
-  <h1 style="color:black;"> Elysée Aristide Houndetoungan </h1>
-  <h2 style="color:gray;"> Assistant Professor of Economics</h2>
-  <br/>
-</div>
+<div class="Menu" id="Menu">
+  <div class="Menuleft" id="Menuleft">
+    <h1>Aristide Houndetoungan</h1>
+  </div><!-- Menuleft -->
 
-<div class="menu" id="Menu">
-  <a id='home' href="/"><i class="fa fa-fw fa-home"></i>Home</a>
-  <!--<a id='about' href="/about">About Me</a>-->
-  <a id='research' href="/research">Research</a>
-  <a id='software' href="/software">Software/Codes</a>
-  <a id='teaching' href="/teaching">Teaching</a>
+  <div class="Menuright" id="Menuright">
+    <a id='home' href="/"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a id='about' href="/about">About Me</a>
+    <a id='research' href="/research">Research</a>
+    <a id='software' href="/software">Software/Codes</a>
+    <a id='teaching' href="/teaching">Teaching</a>
+  </div><!-- Menuleft -->
+
 </div><!-- Menu-->
 </header>
 
@@ -36,18 +37,22 @@
 	{{ content }}
 </main>
 
+
  <footer id="footer">
-   <div class="leftfoot">
+   <div class="foot leftfoot">
      <ul>
-       <li><p>Email:</p> <a href="mailto:aristide.houndetoungan@cyu.fr">aristide.houndetoungan@cyu.fr</a></li>
-       <li><p>Affiliations:</p> <a href="https://thema.u-cergy.fr/" target="_blank">Thema</a>, <a href="https://www.cyu.fr/english-version" target="_blank">Cy Cergy Paris University</a></li>
-       <li id="LscreenShow"><p>Address: CYU, Thema, 33 boulevard du Port, 95011 Cergy-Pontoise Cedex, France</p></li>
+       <li><p>Email: <a href="mailto:aristide.houndetoungan@cyu.fr">aristide.houndetoungan@cyu.fr</a></p> </li>
+       <li><p>Affiliations: <a href="https://thema.u-cergy.fr/" target="_blank">Thema</a>, <a href="https://www.cyu.fr/english-version" target="_blank">Cy Cergy Paris University</a></p></li>
+       <!--<li id="LscreenShow"><p>Address: CYU, Thema, 33 boulevard du Port, 95011 Cergy-Pontoise Cedex, France</p></li>-->
      </ul>
    </div><!-- leftfoot -->
 
-   <div class="rightfoot">
-     <br/>
-     <p>Copyright © 2020 Elysée Aristide Houndetoungan - All Rights Reserved.</p>
+   <div class="mobileShow foot centerfoot">
+     <p></p>
+   </div><!-- rightfoot -->
+
+   <div class="foot rightfoot">
+     <p>Copyright © 2023 Aristide Houndetoungan - All Rights Reserved.</p>
    </div><!-- rightfoot -->
 </footer><!-- footer -->
 </div>

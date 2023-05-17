@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #fffffc;
 }
 
 #wrapper {
@@ -12,348 +13,80 @@ body {
 }
 
 header{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
-/*MENU AND TITLE*/
+
+/**********************MENU AND TITLE***********************/
 /* menu */
-.menu {
+.Menu {
   overflow: hidden;
-  background-color: #104e8B;
+  background-color: #206eAB;
   border: 1px solid #ccc;
   border-right: none;
-  font-family: Arial, sans-serif;
 }
 
-.menu a {
+.Menuleft {
   float: left;
-  padding: 5px;
+  margin-left: 10%;
+  width: 28%;
+}
+
+.Menuright {
+  float: left;
+  margin-right: 10%;
+  width: 52%;
+  text-align: right;
+  margin-top: 28px;
+}
+
+.Menuright a {
+  margin-bottom: 0px;
+  /*float: left;*/
+  margin-left: 25px;
+  /*padding: 25px;*/
   color: white;
   text-decoration: none;
-  font-size: 15px;
-  width: 25%; /* Five links of equal widths */
+  font-size: 16px;
+  font-weight:bold;
+  /*width: 25%; /* Five links of equal widths */
   text-align: center;
-  border-left: 1px solid #fff;
+  /*border-left: 1px solid #fff;
   border-right: 1px solid #ccc;
-  display: block;
+  display: block;*/
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.Menuright a:hover:not(.active) {
+    /*background-color:  #1080BA; /*Color on selecting not active*/
+  color: #CABA10;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.Menuright a:hover {
+  /* background-color: #10BBBB;*/ /*Color on selecting*/
+  color: #CABA10;
+  font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
 
-.menu a:hover:not(.active) {
-    background-color:  #1080BA;
-    color: white;
+.Menuright > a.active {
+  color: #CABA10;
 }
 
-.menu a:hover {
-   background-color: #10BBBB;
-   color: white;
-}
 
-.active {
-  background-color: #109999;
+.Menuleft h1 {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  float: left;
   color: white;
+  font-size: 25px;
+  display: inline;
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
 }
 
 
-.title {
-  margin-top: 30px;
-  text-align: center;
-  overflow: hidden;
-}
-
-.title h1 {
-  font-size: 30px;
-  font-family: Arial, sans-serif;
-  font-weight: 400;
-  line-height: 0.7;
-}
-
-.title h2 {
-  font-size: 21px;
-  font-family:  Arial, sans-serif;
-  font-weight: 300;
-}
-
-#position a, a:hover {
-  font-family:  Arial, sans-serif;
-}
-
-/* CONTENT*/
-#Main {
-  margin-top: 3%;
-}
-
-#homepage{
-  padding-bottom: 130px;
-  min-height: 750px;
-}
-
-#homepage li{
-  line-height: 1.9em;
-}
-
-#homepage ul {
-  margin: 0;
-  line-height: 0em;
-}
-
-.leftside {
-  float: left;
-  margin-left: 15%;
-  width: 20%;
-}
-
-.leftside h2 {
-  font-size: 15px;
-}
-
-.leftside p {
-  font-size: 13px;
-}
-
-.leftside a {
-  font-size: 13px;
-}
-
-/* Image */
-#imgID {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  border-radius: 0%;
-  float: left;
-  margin-bottom: 15px;
-  border-radius: 0%
-
-}
-
-#Myinfo h1, #Myinfo h2, #Myinfo  p {
-    display: inline;
-}
-
-#myaddressicon {
-  float: left;
-  width: 30px;
-  padding-bottom: 0px;
-  padding-top: 0.3em;
-}
-
-#myaddress {
-  text-align: left;
-}
-
-#myaddress p{
-line-height: 1.5em;
-padding: 0;
-margin: 0;
-}
-
-.rightside {
-  margin-right: 15%;
-  margin-left: 38%;
-  text-align: justify;
-}
-
-#more {display: none;}
-
-#myBtn {
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  color: #3A3A3A;
-}
-
-/* Download */
-.box {
-  margin: auto;
-  width: 45%;
-  border: 3px solid #5599FF;
-  padding: 25px;
-  background: #EFEFEF
-}
-
-.btn {
-  padding: 10px;
-  background-color: #10BBBB;
-  font-family: Arial, sans-serif;
-  text-decoration: none;
-  font-size: 16px;
-  text-align: center;
-  border: none;
-}
-
-.btn:hover {
-   background-color: #10DDDD;
-   text-decoration: none;
-}
-
-/* posts */
-.blog{
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-bottom: 130px;
-}
-.blogpreamble {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.blogpreamble h1 {
-  font-size: 21px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-.blogpreamble h2 {
-  font-size: 17px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight:normal
-}
-
-
-.blogpreamble h3 {
-  font-size: 14px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight:normal
-}
-
-/* h lines */
-.smallhr {
-  width:25%;
-  height:1px;
-  color:#ccc;
-  background-color:#ccc;
-}
-
-.largehr {
-  width:100%;
-  height:1px;
-  color: #ccc;
-  background-color: #ccc;
-}
-/* general style*/
-a {
-  font-size: 14px;
-  text-decoration: none;
-  color: #00609A;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-a:hover {
-    text-decoration: underline;
-    color: #0080BA;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-a.disabled {
-  pointer-events: none;
-  cursor: default;
-  color: #3A3A3A;
-}
-a.abled {
-}
-h1 {
-  font-size: 17px;
-  font-family: Arial, sans-serif;
-}
-h2 {
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  font-weight: 600;
-}
-
-#unnumbered{
-  font-size: 19px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: "bold";
-  line-height: 1em;
-}
-p, #share span {
-    font-size: 14px;
-    line-height: 1.9em;
-    color: #3A3A3A;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-span.math {
-  font-size: 14px;
-}
-li {
-    margin: 0;
-    line-height: 2cm;
-}
-strong {
-    font-size:16px;
-}
-
-/* other pages*/
-.npages{
-  margin-left: 15%;
-  margin-right: 15%;
-  padding-bottom: 130px;
-}
-
-
-
-
-
-.npagesblogtop{
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-
-.npagesblogcenter{
-  float: left;
-  margin-left: 10%;
-  width: 60%;
-}
-
-.npagesblogright{
-  margin-right: 10%;
-  margin-left: 72%;
-}
-
-.npagesblogright p{
-  font-size: 14px;
-  line-height: 1em;
-  color: #555;
-  padding-bottom: 20px;
-}
-
-.npagesblogright a {
-  font-size: 14px;
-}
-.contentresearch{
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-#IMGblogRQC2019{
-  display: block;
-  margin-left: 7%;
-  margin-right: 7%;
-  width: 86%;
-  float: none;
-}
-
-#research2 li{
-   font-size: 14px;
-   color: #3A3A3A;
-   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   line-height: 1.9em;
- }
-
-#research2 li:not(:last-child) {
-margin-bottom: 0cm;
-}
-
-#readpaper {
-  margin: 0;
-  font-size: 14px;
-  line-height: 0em;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
-}
-
-/* Footer */
-
+/******************************** Footer ***************************************/
 footer {
   position:absolute;
   bottom: 0;
@@ -367,105 +100,240 @@ footer {
 }
 
 
-.leftfoot {
+.foot{
+  padding-top: 10px;
   float: left;
-  margin-left: 15%;
-  width: 45%;
+}
+
+.leftfoot {
+  margin-left: 10%;
+  width: 30%;
+  text-align: justify;
+}
+
+.centerfoot {
+  width: 10%;
   text-align: justify;
 }
 
 .rightfoot {
-  margin-right: 15%;
-  margin-left: 62%;
-  text-align: justify;
+  margin-right: 10%;
+  width: 40%;
+  text-align: right;
 }
 
 
 footer ul {
-    padding: 0px;
-    list-style: none;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
 footer ul li {
-    margin-right: 20px;
-    margin-bottom: 0cm;
-    margin-top: 0cm;
-    line-height: 1em;
-    font-size: 16px;
+  line-height: 1em;
 }
 
 footer p{
-  font-size: 12px;
+  font-size: 14px;
   display: inline;
   line-height: 2em;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Arial', 'Helvetica', sans-serif;
   color: #000
 }
 
 footer a{
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
-  line-height: 2em;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
-.leftcontact {
+
+/********************************** CONTENT**************************************/
+#Main {
+  margin-top: 3%;
+}
+
+#imgID {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 0%;
+  float: center;
+  margin-bottom: 15px;
+  border-radius: 100%
+
+}
+
+#Homepage{
+  padding-bottom: 130px;
+  min-height: 1000px;
+}
+
+#Homepage li{
+  line-height: 1.9em;
+}
+
+#Homepage ul {
+  margin: 0;
+  line-height: 0em;
+}
+
+.Homeleft {
   float: left;
+  margin-left: 15%;
+  margin-right: 2%;
+  width: 25%;
+}
+
+.Homeleft h1 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-family:  'monospace', 'Verdana', sans-serif;
+  font-size: 28px;
+}
+
+.Homeleft h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0px;
+  font-weight:normal;
+  font-size: 20px;
+  color: gray;
+  font-family:  'monospace', 'Verdana', sans-serif;
+}
+
+.Homeleft a {
+  margin-top: 6px;
+  font-size: 18px;
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+
+.Homeleft a:hover {
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+
+.Homeleft p {
+  font-size: 13px;
+}
+
+/* Address and Phone*/
+.contact {
+  margin-left: 20%;
   width: 60%;
 }
 
-.rightcontact {
-  margin-left: 65%;
+.contact p {
+  display: inline;
+  font-size: 16px;
 }
 
-.rightcontact p {
+#Myinfo a {
+  display: inline;
+  padding: 5px;
+}
+
+.Homeright {
+  float: left;
+  margin-right: 15%;
+  width: 43%;
+  text-align: justify;
+}
+
+
+/* general style*/
+h1 {
+  font-size: 28px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h2 {
+  font-size: 20px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #00609A;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
+    color: #EAAA10;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #3A3A3A;
+}
+
+a.abled {
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.9em;
+  color: #3A3A3A;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+ul {
+padding-left: 25px;
+}
+
+li {
+   margin: 0;
+  line-height: 2cm;
+}
+
+
+.nomarginafter{
+  margin-bottom: 0px;
+}
+.nomarginbefore{
+  margin-top: 0px;
+}
+.descriptif{
+  color: #444444;
   font-size: 14px;
 }
-#form{
-  width: 100%;
-  background:#ffe;
-  padding-bottom: 2%;
-  padding-top: 2%;
-}
-#name{
-    width: 98%;
-    padding: 5px;
-    margin: 1%;
+
+/* other pages*/
+.npages{
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 130px;
 }
 
-#email{
-  width: 98%;
-  padding: 5px;
-  margin: 1%;
+.contentresearch{
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-#message{
-  width: 98%;
-  margin: 1%;
-  padding: 5px;
-  height: 200px;
+#research2 li{
+   font-size: 16px;
+   color: black;
+   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   line-height: 1.9em;
+ }
+
+#research2 li:not(:last-child) {
+margin-bottom: 0cm;
 }
 
-#submit{
-    margin-left: 1%;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color:#104e8B;
-    font-size: 12px;
-    color: #fff;
+/* Button*/
+a.button {
+  font-size: 13px;
+  border: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #206eAB;
+  color: white;
+  padding: 3px 12px 3px 12px;
 }
-
-.mapouter{
-  position:relative;
-  text-align:right;
-  height:350px;
-  width:100%;
+a:hover.button {
+  border-radius: 10px;
+  background-color: #EAAA10;
 }
-.gmap_canvas {
-  overflow:hi nonedden;
-  background:none!important;
-  height:350px;
-  width:100%;
-}
-
 
 /* Share  */
 #share-buttons {display: inline-block; vertical-align: middle; }
@@ -490,6 +358,7 @@ footer a{
 .share {
   text-align: center;
 }
+
 /*Phone and small screens*/
 .mobileShow {}
 #LscreenShow {display: none;}
@@ -497,309 +366,268 @@ footer a{
 #miniLscreenShow {display: none;}
 
 @media screen and (max-width: 1200px) {
-  header{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
   .npages{
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 130px;
   }
 
-
-
-
-
-  .box {
-    width: 60%;
-  }
-
-  .rightcontact p {
-    font-size: 14px;
-  }
-
-  .mapouter{
-    height:330px;
-  }
-  .gmap_canvas {
-    height:330px;
-  }
-
-  .leftside {
+  .Homeleft {
     margin-left: 10%;
-    width: 27%;
+    margin-right: 3%;
+    width: 30%;
   }
 
-  .rightside {
+  /* Address and Phone*/
+  .contact {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  #Myinfo a {
+    padding: 4px;
+  }
+
+  .Homeright {
+    float: left;
     margin-right: 10%;
-    margin-left: 39%;
+    width: 47%;
+    text-align: justify;
   }
 
-  #myaddress p{
-    font-size: 14px;
+  .Menuleft {
+    margin-left: 5%;
+    width: 33%;
+  }
+
+  .Menuright {
+    margin-right: 5%;
+    width: 57%;
+    margin-top: 26px;
+  }
+
+  .Menuleft h1 {
+    font-size: 22px;
+  }
+
+  .Menuright a {
+    margin-left: 22px;
+  }
+
+  .Homeleft h1 {
+    font-size: 25px;
+  }
+
+  .Homeleft h2 {
+    font-size: 18px;
+  }
+
+  .Homeleft a {
+    font-size: 17px;
   }
 
   .leftfoot {
-    margin-left: 10%;
-    width: 50%;
+    margin-left: 5%;
+    width: 37.5%;
+    text-align: justify;
+  }
+
+  .centerfoot {
+    width: 5%;
     text-align: justify;
   }
 
   .rightfoot {
-    margin-right: 10%;
-    margin-left: 62%;
+    margin-right: 5%;
+    width: 47.5%;
+    text-align: right;
   }
 }
 
 
 @media screen and (max-width: 950px) {
-  header{
-    margin-left: 7%;
-    margin-right: 7%;
+  .npages{
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-bottom: 130px;
+  }
+
+  .Homeleft {
+    margin-left: 8%;
+    margin-right: 2%;
+    width: 32%;
+  }
+
+  .Homeright {
+    float: left;
+    margin-right: 8%;
+    width: 50%;
+    text-align: justify;
+  }
+
+  .Menuleft {
+    margin-left: 2%;
+    width: 33%;
+  }
+
+  .Menuright {
+    margin-right: 2%;
+    width: 63%;
+    margin-top: 25px;
+  }
+
+  .Menuleft h1 {
+    font-size: 20px;
+  }
+
+  .Menuright a {
+    font-size: 15px;
+    margin-left: 18px;
+  }
+
+  .Homeleft h1 {
+    font-size: 22px;
+  }
+
+  .Homeleft h2 {
+    font-size: 17px;
+  }
+
+  .Homeleft a {
+    font-size: 17px;
+  }
+
+  .leftfoot {
+    margin-left: 2%;
+    width: 43%;
+    text-align: justify;
+  }
+
+  .centerfoot {
+    width: 3%;
+    text-align: justify;
+  }
+
+  .rightfoot {
+    margin-right: 2%;
+    width: 50%;
+    text-align: right;
+  }
+
+  footer ul li {
+      line-height: 0.9em;
+  }
+
+  footer p{
+    font-size: 13px;
+    line-height: 1.8em;
+  }
+
+  footer a{
+    font-size: 13px;
   }
 
 
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p{
+    font-size: 15px;
+    line-height: 1.7em;
+  }
+
+  ul {
+  padding-left: 20px;
+  }
+
+  li {
+    line-height: 1.8cm;
+  }
+}
+
+
+
+@media screen and (max-width: 835px) {
   .npages{
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-bottom: 130px;
   }
 
 
-  .npagesblogcenter{
-    float: left;
-    margin-left: 7%;
-    width: 60%;
+  .Menuleft h1 {
+    font-size: 16px;
   }
 
-  .npagesblogright{
-    margin-right: 7%;
-    margin-left: 69%;
+  .Menuright {
+    margin-top: 22px;
   }
 
-  .contentresearch{
-    margin-left: 7%;
-    margin-right: 7%;
+  .Menuright a {
+    margin-left: 10px;
+    font-size: 14px;
   }
 
-  .leftside {
-    margin-left: 7%;
-    width: 30%;
-  }
-
-
-  .rightside {
-    margin-right: 7%;
-    margin-left: 39%;
-  }
-
-  .title h1 {
-    font-size: 26px;
-  }
-
-  .title h2 {
-    font-size: 17px;
-  }
-
-  .box {
-    width: 70%;
-  }
-
-  .blog{
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-
-  .blogpreamble h1 {
-    font-size: 22px;
-  }
-
-  .blogpreamble h2 {
+  .Homeleft h1 {
     font-size: 18px;
   }
 
-
-  .blogpreamble h3 {
-    font-size: 14px;
+  .Homeleft h2 {
+    font-size: 16px;
   }
 
-  #myaddressicon {
-    padding-bottom: 0px;
+  .Homeleft a {
+    font-size: 15px;
   }
 
   .leftfoot {
-    margin-left: 7%;
-    width: 53%;
+    margin-left: 2%;
+    width: 42%;
+    text-align: justify;
+  }
+
+  .centerfoot {
+    width: 2%;
     text-align: justify;
   }
 
   .rightfoot {
-    margin-right: 7%;
-    margin-left: 62%;
-  }
-}
-
-
-@media screen and (max-width: 855px) {
-  .mapouter{
-    height:300px;
-  }
-  .gmap_canvas {
-    height:300px;
+    margin-right: 2%;
+    width: 52%;
+    text-align: right;
   }
 
-  #IMGblogRQC2019{
-    display: block;
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 60%;
-    float: none;
+  footer ul li {
+      line-height: 0.9em;
   }
 
-  .npagesblogcenter{
-    float:none;
-    margin-left: 7%;
-    width: 86%;
+  footer p{
+    font-size: 13px;
+    line-height: 1.8em;
   }
 
-  .npagesblogright{
-    margin-right: 7%;
-    margin-left: 7%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  header{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .npages{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .contentresearch{
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .npagesblogcenter{
-    margin-left: 5%;
-    width: 90%;
-  }
-
-  .npagesblogright{
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-  .leftside {
-    margin-left: 5%;
-    width: 30%;
-  }
-
-
-  .rightside {
-    margin-right: 5%;
-    margin-left: 37%;
-  }
-
-  /*Menu*/
-  .menu a {
-    font-size: 15px;
-  }
-
-  .title h1 {
-    font-size: 21px;
-  }
-
-  .title h2 {
-    font-size: 16px;
-  }
-
-  a {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 16px;
-  }
-  #unnumbered{
-    font-size: 17px;
-  }
-  h2 {
-    font-size: 15px;
-  }
-  p, #share span{
-      font-size: 15px;
-  }
-  strong {
-      font-size:16px;
-  }
-
-  .box {
-    width: 75%;
-  }
-
-  #myBtn {
+  footer a{
     font-size: 13px;
   }
 
-  #research2 li{
-     font-size: 15px;
-   }
-
-  #readpaper {
-    font-size: 15px;
+  h1 {
+    font-size: 20px;
   }
-
-
-
-  #message{
-    padding: 5px;
-    height: 150px;
-  }
-
-  #submit{
-      font-size: 14px;
-  }
-
-  .mapouter{
-    height:250px;
-  }
-  .gmap_canvas {
-    height:250px;
-  }
-
-
-  .blogpreamble h1 {
-    font-size: 17px;
-  }
-
-  .blogpreamble h2 {
+  h2 {
     font-size: 16px;
   }
-
-
-  .blogpreamble h3 {
-    font-size: 14px;
-  }
-
-  .leftfoot {
-    margin-left: 5%;
-    width: 55%;
-    text-align: justify;
-  }
-
-  .rightfoot {
-    margin-right: 5%;
-    margin-left: 62%;
+  p{
+    font-size: 15px;
+    line-height: 1.5em;
   }
 }
-
 
 
 
@@ -809,22 +637,47 @@ footer a{
   #mobileMenu {display:block;}
 
   /*Menu*/
-  .menu {
+  .Menu {
     position: relative;
     display: none;
     width: 100%;
   }
 
-  .menu a {
-    float: none;
-    width: 100%; /* Five links of equal widths */
-    font-size: 14px;
-    display: block;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #ccc;
-    border-left: none;
-    border-right: none;
+  .Menuleft {
+    float: left;
+    margin-left: 3%;
+    width: 97%;
   }
+
+  .Menuright {
+    float: left;
+    margin-left: 3%;
+    width: 97%;
+    margin-top: 0px;
+  }
+
+  .Menuright a {
+    float: none;
+    display: block;
+    margin-bottom: 0px;
+    /*float: left;*/
+    padding: 3px;
+    font-size: 14px;
+    text-align: left;
+    border: 0px;
+  }
+
+  .Menuleft h1 {
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    float: left;
+    color: white;
+    font-size: 16px;
+    display: inline;
+    font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+  }
+
 
   header a.icon {
     padding: 10px;
@@ -833,7 +686,7 @@ footer a{
     font-size: 14px;
     width: 100%; /* Five links of equal widths */
     text-align: center;
-    background-color: #104e8B;
+    background-color: #206eAB;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
     border-right: 1px solid #ccc;
@@ -841,126 +694,10 @@ footer a{
   }
 
   header a.icon:hover {
-    background-color: #10BBBB;
+    background-color: #CABA10;
     color: white;
   }
 
-  .title h1 {
-    font-size: 20px;
-  }
-
-  .title h2 {
-    font-size: 16px;
-  }
-
-  #homepage{
-    min-height: 0px;
-    padding-bottom: 300px;
-  }
-
-  /* Image */
-  #imgID {
-    display: block;
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-    border-radius: 0%;
-    float: none;
-  }
-
-  #Myinfo h1, #Myinfo h2, #Myinfo  p {
-      display: inline;
-  }
-
-  .leftside {
-    float:none;
-    margin-left: 5%;
-    width: 90%;
-  }
-
-  .rightside {
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-
-
-  #more {display: none;}
-
-  #myBtn {
-    font-size: 14px;
-  }
-
-  a {
-    font-size: 15px;
-  }
-
-  h1 {
-    font-size: 15px;
-    align: 'center';
-  }
-  #unnumbered{
-    font-size: 19px;
-  }
-  h2 {
-    font-size: 15px;
-    align: 'center';
-  }
-
-  p, #share span  {
-      font-size: 15px;
-      line-height: 1.9em;
-  }
-
-  span.math {
-    font-size: 15px;
-  }
-  li {
-      margin: 0;
-      line-height: 2cm;
-  }
-  strong {
-      font-size:15px;
-  }
-
-  /* Download */
-  .box {
-    margin: auto;
-    width: 90%;
-  }
-
-  .btn {
-    padding: 10px;
-    font-size: 15px;
-  }
-
-  .npages{
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 300px;
-  }
-
-  .contentresearch, .npagesblogright{
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-
-  .npagesblogcenter{
-    margin-left: 0%;
-    width: 100%;
-  }
-
-  #research2 li{
-     font-size: 14px;
-   }
-
-  #readpaper {
-    font-size: 15px;
-  }
-
-  footer {
-    height: 270px;
-  }
 
   footer p{
     font-size: 12px;
@@ -973,13 +710,88 @@ footer a{
   .leftfoot {
     float: none;
     margin-left: 5%;
+    margin-right: 5%;
     width: 90%;
   }
 
   .rightfoot {
     margin-right: 5%;
     margin-left: 5%;
+    width: 90%;
+    text-align: justify;
   }
+
+  #homepage{
+    min-height: 2000px;
+    padding-bottom: 100px;
+  }
+
+  .Homeleft {
+    float:none;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .Homeright {
+    float:none;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;}
+
+  /* Image */
+  #imgID {
+    display: block;
+    width: 50%;
+    border-radius: 100%;
+    float: center;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+    align: 'center';
+  }
+  h2 {
+    font-size: 16px;
+    align: 'center';
+  }
+
+  p, strong{
+    font-size: 14px;
+    line-height: 1.9em;
+  }
+
+
+  li {
+    margin: 0;
+    line-height: 2cm;
+  }
+
+
+  .npages{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 300px;
+  }
+
+  .contentresearch{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+
+
+  #research2 li{
+     font-size: 14px;
+   }
+
+   /* Button*/
+   a.button {
+     font-size: 12px;
+   }
 
 }
 /* CSS */
