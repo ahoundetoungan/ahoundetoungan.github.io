@@ -40,6 +40,17 @@ header{
   margin-top: 28px;
 }
 
+.Menuleft a{
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+.Menuleft a:hover {
+  color: #CABA10;
+  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+}
+
 .Menuright a {
   margin-bottom: 0px;
   /*float: left;*/
