@@ -341,7 +341,8 @@ a.button {
   border-radius: 10px;
   background-color: #206eAB;
   color: white;
-  padding: 3px 12px 3px 12px;
+  padding: 0px  6px 1px 6px;
+  margin: 0px;
 }
 a:hover.button {
   border-radius: 10px;
