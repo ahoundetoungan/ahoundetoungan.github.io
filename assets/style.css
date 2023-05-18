@@ -341,8 +341,7 @@ a.button {
   border-radius: 10px;
   background-color: #206eAB;
   color: white;
-  padding: 0px  6px 1px 6px;
-  margin: 0px;
+  padding: 2px 6px 3px 6px;
 }
 a:hover.button {
   border-radius: 10px;
@@ -804,7 +803,8 @@ a:hover.button {
    /* Button*/
    a.button {
      font-size: 12px;
+     padding: 0px  6px 1px 6px;
+     margin: 0px;
    }
-
 }
 /* CSS */
