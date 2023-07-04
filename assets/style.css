@@ -171,7 +171,7 @@ footer a{
   border-radius: 0%;
   float: center;
   margin-bottom: 15px;
-  border-radius: 100%
+  border-radius: 0%
 
 }
 
@@ -755,7 +755,6 @@ a:hover.button {
   #imgID {
     display: block;
     width: 50%;
-    border-radius: 100%;
     float: center;
   }
 
