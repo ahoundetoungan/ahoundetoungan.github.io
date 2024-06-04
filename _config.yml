@@ -6,6 +6,6 @@ twitter_username: aristide_eh
 github_username:  ahoundetoungan
 theme: jekyll-theme-minimal
 markdown: kramdown
-plugins: 
+plugins:
   - jekyll-sitemap
   - jekyll-feed
