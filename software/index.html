@@ -12,9 +12,25 @@ $(document).ready(function() {
   <h1>Software/Codes</h1>
   <hr>
   <div class="contentresearch">
-    <p class="descriptif"> This page aims to dissiminate codes related to my research. Some of those codes are R packages implementing methods/models that I developed.
-      Understanding advanced econometric models may be easy, but implementing these models is sometimes challenging and particularly time consuming.
-      This page offers programs that can be directly used by researchers who wish to apply my methods to data.
+
+    <p class="descriptif">
+    <script>
+      fetch("https://ahoundetoungan.github.io/cranlogs/badges/allpackages.json")
+        .then(response => response.json())
+        .then(data => {
+          const total = Number(data.total).toLocaleString();
+          const semester = Number(data.semester).toLocaleString();
+          document.getElementById("cran-stats").innerText =
+            `Implementing econometric methods can be challenging and time-consuming.
+            This page provides programs that implement methods and models related to my research. Some of these programs are available as R packages on GitHub or CRAN.
+            As of ${data.date}, my CRAN packages have been downloaded ${total} times in total, including ${semester} times in the past 6 months.`;
+        })
+        .catch(error => {
+          document.getElementById("cran-stats").innerText = "Failed to load CRAN stats.";
+          console.error(error);
+        });
+    </script>
+  </p>
 
       <!--  My latest packages include <a href="https://github.com/ahoundetoungan/PartialNetwork" target="_blank">PartialNetwork</a> (with <a href="https://www.vincentbouchereconomist.com/" target="_blank">Vincent Boucher</a>)
       which aims to estimate peer effect models with partial network data and <a href="https://github.com/ahoundetoungan/CDatanet" target="_blank">CDatanet</a>
@@ -36,7 +52,7 @@ $(document).ready(function() {
               <img src="https://www.r-pkg.org/badges/version/CDatanet" alt="CRAN">
             </a>
             <a href="https://cran.r-project.org/package=CDatanet">
-              <img src="https://img.shields.io/endpoint?url=https://ahoundetoungan.github.io/CDatanet/badges/cran_downloads.json" alt="CRAN Downloads">
+              <img src="https://img.shields.io/endpoint?url=https://ahoundetoungan.github.io/cranlogs/badges/CDatanet.json" alt="CRAN Downloads">
             </a>
           </li>
 
@@ -52,7 +68,7 @@ $(document).ready(function() {
               <img src="https://www.r-pkg.org/badges/version/PartialNetwork" alt="CRAN">
             </a>
             <a href="https://cran.r-project.org/package=PartialNetwork">
-              <img src="https://img.shields.io/endpoint?url=https://ahoundetoungan.github.io/PartialNetwork/badges/cran_downloads.json" alt="CRAN Downloads">
+              <img src="https://img.shields.io/endpoint?url=https://ahoundetoungan.github.io/cranlogs/badges/PartialNetwork.json" alt="CRAN Downloads">
             </a>
           </li>
 
@@ -67,7 +83,7 @@ $(document).ready(function() {
               <img src="https://www.r-pkg.org/badges/version/vMF" alt="CRAN">
             </a>
             <a href="https://cran.r-project.org/package=vMF">
-              <img src="https://img.shields.io/endpoint?url=https://ahoundetoungan.github.io/vMF/badges/cran_downloads.json" alt="CRAN Downloads">
+              <img src="https://img.shields.io/endpoint?url=https://ahoundetoungan.github.io/cranlogs/badges/vMF.json" alt="CRAN Downloads">
             </a>
           </li>
         </ul>
