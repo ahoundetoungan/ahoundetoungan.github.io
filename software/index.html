@@ -19,36 +19,26 @@ $(document).ready(function() {
     </p>
 
     <script>
-      fetch("https://ahoundetoungan.github.io/cranlogs/badges/allpackages.json")
+      fetch("https://ahoundetoungan.com/cranlogs/badges/allpackages.json")
         .then(response => response.json())
         .then(data => {
-          const total = Number(data.total).toLocaleString();
-          const semester = Number(data.semester).toLocaleString();
           document.getElementById("cran-stats").innerText =
-            `As of ${data.date}, my CRAN packages have been downloaded ${total} times in total, including ${semester} times in the past 6 months.`;
+            `As of ${data.date}, my CRAN packages have been downloaded ${data.total} times in total, including ${data.semester} times in the past 6 months.`;
         })
         .catch(error => {
           document.getElementById("cran-stats").innerText = "Failed to load CRAN stats.";
-          console.error(error);
+          console.error("Error loading CRAN stats:", error);
         });
     </script>
 
-      <!--  My latest packages include <a href="https://github.com/ahoundetoungan/PartialNetwork" target="_blank">PartialNetwork</a> (with <a href="https://www.vincentbouchereconomist.com/" target="_blank">Vincent Boucher</a>)
-      which aims to estimate peer effect models with partial network data and <a href="https://github.com/ahoundetoungan/CDatanet" target="_blank">CDatanet</a>
-      for estimating a count data model with social interactions (this package is related to my job market paper).-->
+
       <h2>Packages</h2>
       <div id = "research2">
         <ul>
           <li><p class="nomarginafter">  <b>CDatanet</b> - An R package for estimating Count Data Models with Social interactions</p>
-            <!--  <a href="https://lifecycle.r-lib.org/articles/stages.html#stable">
-              <img src="https://img.shields.io/badge/lifecycle-stable-blue.svg" alt="Lifecycle: stable">
-            </a>-->
             <a href="https://github.com/ahoundetoungan/CDatanet">
               <img src="https://img.shields.io/badge/-GitHub-gray.svg" alt="GitHub: CDatanet">
             </a>
-            <!--  <a href="https://ahoundetoungan.r-universe.dev/CDatanet">
-              <img src="https://ahoundetoungan.r-universe.dev/badges/CDatanet" alt="R-universe">
-            </a>-->
             <a href="https://CRAN.R-project.org/package=CDatanet">
               <img src="https://www.r-pkg.org/badges/version/CDatanet" alt="CRAN">
             </a>
