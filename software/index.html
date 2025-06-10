@@ -12,8 +12,10 @@ $(document).ready(function() {
   <h1>Software/Codes</h1>
   <hr>
   <div class="contentresearch">
+    <p id="cran-stats" class="descriptif">
+      Loading CRAN stats...
+    </p>
 
-    <p class="descriptif">
     <script>
       fetch("https://ahoundetoungan.github.io/cranlogs/badges/allpackages.json")
         .then(response => response.json())
@@ -30,7 +32,6 @@ $(document).ready(function() {
           console.error(error);
         });
     </script>
-  </p>
 
       <!--  My latest packages include <a href="https://github.com/ahoundetoungan/PartialNetwork" target="_blank">PartialNetwork</a> (with <a href="https://www.vincentbouchereconomist.com/" target="_blank">Vincent Boucher</a>)
       which aims to estimate peer effect models with partial network data and <a href="https://github.com/ahoundetoungan/CDatanet" target="_blank">CDatanet</a>
