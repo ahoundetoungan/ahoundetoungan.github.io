@@ -12,8 +12,10 @@ $(document).ready(function() {
   <h1>Software/Codes</h1>
   <hr>
   <div class="contentresearch">
-    <p id="cran-stats" class="descriptif">
-      Loading CRAN stats...
+    <p class="descriptif">
+      Implementing econometric methods can be challenging and time-consuming.
+      This page provides programs that implement methods and models related to my research. Some of these programs are available as R packages on GitHub or CRAN.
+      <span id="cran-stats">Loading CRAN stats...</span>
     </p>
 
     <script>
@@ -23,9 +25,7 @@ $(document).ready(function() {
           const total = Number(data.total).toLocaleString();
           const semester = Number(data.semester).toLocaleString();
           document.getElementById("cran-stats").innerText =
-            `Implementing econometric methods can be challenging and time-consuming.
-            This page provides programs that implement methods and models related to my research. Some of these programs are available as R packages on GitHub or CRAN.
-            As of ${data.date}, my CRAN packages have been downloaded ${total} times in total, including ${semester} times in the past 6 months.`;
+            `As of ${data.date}, my CRAN packages have been downloaded ${total} times in total, including ${semester} times in the past 6 months.`;
         })
         .catch(error => {
           document.getElementById("cran-stats").innerText = "Failed to load CRAN stats.";
