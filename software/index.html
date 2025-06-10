@@ -23,9 +23,9 @@ $(document).ready(function() {
       fetch("https://ahoundetoungan.com/cranlogs/badges/allpackages.json")
         .then(response => response.json())
         .then(data => {
-          const date = `<span style="font-weight: bold; color: #e000fb;">${data.date}</span>`;
-          const total = `<span style="font-weight: bold; color: #e000fb;">${data.total}</span>`;
-          const semester = `<span style="font-weight: bold; color: #e000fb;">${data.semester}</span>`;
+          const date = `<span style="font-style: italic; color: #6600FF;">${data.date}</span>`;
+          const total = `<span style="font-style: italic; color: #6600FF;">${data.total}</span>`;
+          const semester = `<span style="font-style: italic; color: #6600FF;">${data.semester}</span>`;
 
           document.getElementById("cran-stats").innerHTML =
             `As of ${date}, my CRAN packages have been downloaded ${total} times in total, including ${semester} times in the past 6 months.`;
