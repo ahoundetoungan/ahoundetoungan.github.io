@@ -294,6 +294,7 @@ padding-left: 25px;
 }
 
 li {
+  font-size: 16px;
    margin: 0;
   line-height: 2cm;
 }
@@ -561,6 +562,7 @@ a:hover.button {
   }
 
   li {
+    font-size: 15px;
     line-height: 1.8cm;
   }
 }
@@ -777,6 +779,7 @@ a:hover.button {
 
 
   li {
+    font-size: 14px;
     margin: 0;
     line-height: 2cm;
   }
