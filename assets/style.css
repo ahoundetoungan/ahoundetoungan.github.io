@@ -340,7 +340,8 @@ a.button {
   font-size: 13px;
   text-align: center;
   text-decoration: underline;
-  margin-top: 4px;
+  margin-top: 0px;
+  font-weight: bold;
   /*border: 20px;
   border-radius: 10px;
   background-color: #206eAB;
@@ -349,7 +350,7 @@ a.button {
 }
 a:hover.button {
   /*border-radius: 10px;*/
-  background-color: #EAAA10;
+  /*background-color: #EAAA10;*/
 }
 
 /* Share  */
