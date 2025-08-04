@@ -809,7 +809,7 @@ a:hover.button {
    /* Button*/
    a.button {
      font-size: 12px;
-     padding: 0px  6px 1px 6px;
+     /*padding: 0px  6px 1px 6px;*/
      margin: 0px;
    }
 }
