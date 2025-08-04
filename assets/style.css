@@ -295,7 +295,8 @@ padding-left: 25px;
 
 li {
   font-size: 16px;
-   margin: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
   line-height: 2cm;
 }
 
