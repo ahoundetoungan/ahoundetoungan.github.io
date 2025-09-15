@@ -78,7 +78,6 @@ h1, h2 {
 header a, header p, header li, 
 footer a, footer p, footer li, 
 .Homeleft a, .Homeleft p, .Homeleft li {
-  font-size: 26px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -135,6 +134,18 @@ footer a, footer p, footer li,
   color: white;
   font-size: 25px;
   display: inline;
+}
+
+.Menuright a:hover:not(.active) {
+  color: #EAAA10;/*#CABA10;*/
+}
+
+.Menuright a:hover {
+  color: #EAAA10;/*#CABA10;*/
+}
+
+.Menuright > a.active {
+  color: #EAAA10;/*#CABA10;*/
 }
 
 
