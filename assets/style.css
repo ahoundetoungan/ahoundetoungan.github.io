@@ -71,8 +71,9 @@ h1, h2 {
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.Menu, .Menuleft, .Menuright, footer, .foot, .centerfoot, .rightfoot, 
-.Homeleft, .contact, #Myinfo {
+header a, header p, header li, 
+footer a, footer p, footer li, 
+.Homeleft a, .Homeleft p, .Homeleft li {
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
