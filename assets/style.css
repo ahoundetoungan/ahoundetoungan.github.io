@@ -36,10 +36,14 @@ a.disabled {
 }
 
 a:hover {
-  color: #CABA10;
+  color: #EAAA10;/*#CABA10;*/
 }
 
 a.active {
+  color:  #EAAA10;/*#CABA10;*/
+}
+
+a:hover:not(.active) {
   color: #CABA10;
 }
 
