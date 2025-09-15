@@ -44,7 +44,11 @@ a.active {
 }
 
 a:hover:not(.active) {
-  color: #CABA10;
+  color:  #EAAA10;/*#CABA10;*/
+}
+
+> a.active {
+  color:  #EAAA10;/*#CABA10;*/
 }
 
 p{
@@ -74,6 +78,7 @@ h1, h2 {
 header a, header p, header li, 
 footer a, footer p, footer li, 
 .Homeleft a, .Homeleft p, .Homeleft li {
+  font-size: 26px;
   font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
