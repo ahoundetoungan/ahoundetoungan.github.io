@@ -44,11 +44,11 @@ header{
   margin: 0px;
   padding: 0px;
   color: white;
-  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 .Menuleft a:hover {
   color: #CABA10;
-  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .Menuright a {
@@ -65,19 +65,19 @@ header{
   /*border-left: 1px solid #fff;
   border-right: 1px solid #ccc;
   display: block;*/
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .Menuright a:hover:not(.active) {
     /*background-color:  #1080BA; /*Color on selecting not active*/
   color: #CABA10;
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .Menuright a:hover {
   /* background-color: #10BBBB;*/ /*Color on selecting*/
   color: #CABA10;
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 
@@ -93,7 +93,7 @@ header{
   color: white;
   font-size: 25px;
   display: inline;
-  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 
@@ -147,14 +147,14 @@ footer p{
   font-size: 14px;
   display: inline;
   line-height: 1.2em;
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   color: #000
 }
 
 footer a{
   font-size: 14px;
   text-decoration: none;
-  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 
@@ -199,7 +199,7 @@ footer a{
 .Homeleft h1 {
   margin-top: 20px;
   margin-bottom: 8px;
-  font-family:  'monospace', 'Verdana', sans-serif;
+  font-family:  'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   font-size: 28px;
 }
 
@@ -210,18 +210,18 @@ footer a{
   font-weight:normal;
   font-size: 20px;
   color: gray;
-  font-family:  'monospace', 'Verdana', sans-serif;
+  font-family:  'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .Homeleft a {
   margin-top: 6px;
   font-size: 18px;
-  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.2em;
 }
 
 .Homeleft a:hover {
-  font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .Homeleft p {
@@ -256,21 +256,21 @@ footer a{
 /* general style*/
 h1 {
   font-size: 28px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 h2 {
   font-size: 20px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 a {
   text-decoration: none;
   color: #00609A;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 a:hover {
     text-decoration: underline;
     color: #EAAA10;
-    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 a.disabled {
@@ -286,7 +286,7 @@ p{
   font-size: 16px;
   line-height: 1.2em;
   color: #3A3A3A;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 ul {
@@ -295,7 +295,7 @@ padding-left: 25px;
 
 li {
   font-size: 16px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   line-height: 1.2em;
 }
@@ -327,7 +327,7 @@ li {
 #research2 li{
    font-size: 16px;
    color: black;
-   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
    line-height: 1.2em;
  }
 
@@ -694,7 +694,7 @@ a:hover.button {
     color: white;
     font-size: 16px;
     display: inline;
-    font-family: 'Arial', 'Helvetica', 'Verdana', sans-serif;
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   }
 
 
