@@ -36,19 +36,19 @@ a.disabled {
 }
 
 a:hover {
-  color: #EAAA10;/*#CABA10;*/
+  color: #CABA10;/*#EAAA10;*/
 }
 
 a.active {
-  color:  #EAAA10;/*#CABA10;*/
+  color:  #CABA10;/*#EAAA10;*/
 }
 
 a:hover:not(.active) {
-  color:  #EAAA10;/*#CABA10;*/
+  color:  #CABA10;/*#EAAA10;*/
 }
 
 > a.active {
-  color:  #EAAA10;/*#CABA10;*/
+  color:  #CABA10;/*#EAAA10;*/
 }
 
 p{
@@ -137,15 +137,15 @@ footer a, footer p, footer li,
 }
 
 .Menuright a:hover:not(.active) {
-  color: #EAAA10;/*#CABA10;*/
+  color: #CABA10;/*#EAAA10;*/
 }
 
 .Menuright a:hover {
-  color: #EAAA10;/*#CABA10;*/
+  color: #CABA10;/*#EAAA10;*/
 }
 
 .Menuright > a.active {
-  color: #EAAA10;/*#CABA10;*/
+  color: #CABA10;/*#EAAA10;*/
 }
 
 
