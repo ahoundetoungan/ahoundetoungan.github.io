@@ -17,6 +17,61 @@ header{
   margin-right: 0%;
 }
 
+/***********************general style and font-family ***********************/
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: #00609A;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #3A3A3A;
+}
+
+a:hover {
+  color: #CABA10;
+}
+
+a.active {
+  color: #CABA10;
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #3A3A3A;
+}
+
+ul {
+padding-left: 25px;
+}
+
+li {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+a, p, li {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1, h2 {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+p, a, .Menu, .Menuleft, .Menuright, footer, .foot, .centerfoot, .rightfoot, 
+.Homeleft, .contact, #Myinfo {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
 /**********************MENU AND TITLE***********************/
 /* menu */
 .Menu {
@@ -24,14 +79,12 @@ header{
   background-color: #206eAB;
   border: 1px solid #ccc;
   border-right: none;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .Menuleft {
   float: left;
   margin-left: 10%;
   width: 28%;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .Menuright {
@@ -40,7 +93,6 @@ header{
   width: 52%;
   text-align: right;
   margin-top: 28px;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .Menuleft a{
@@ -48,9 +100,7 @@ header{
   padding: 0px;
   color: white;
 }
-.Menuleft a:hover {
-  color: #CABA10;
-}
+
 
 .Menuright a {
   margin-bottom: 0px;
@@ -65,27 +115,8 @@ header{
   text-align: center;
   /*border-left: 1px solid #fff;
   border-right: 1px solid #ccc;
-  display: block;
-  font-family: Georgia, 'Times New Roman', serif;*/
+  display: block;*/
 }
-
-.Menuright a:hover:not(.active) {
-    /*background-color:  #1080BA; /*Color on selecting not active*/
-  color: #CABA10;
-  /*font-family: Georgia, 'Times New Roman', serif;*/
-}
-
-.Menuright a:hover {
-  /* background-color: #10BBBB;*/ /*Color on selecting*/
-  color: #CABA10;
-  /*font-family: Georgia, 'Times New Roman', serif;*/
-}
-
-
-.Menuright > a.active {
-  color: #CABA10;
-}
-
 
 .Menuleft h1 {
   margin-top: 22px;
@@ -94,7 +125,6 @@ header{
   color: white;
   font-size: 25px;
   display: inline;
-  /*font-family: 'Trebuchet MS', Arial, sans-serif;*/
 }
 
 
@@ -148,14 +178,12 @@ footer p{
   font-size: 14px;
   display: inline;
   line-height: 1.4em;
-  font-family: Georgia, 'Times New Roman', serif;
   color: #000
 }
 
 footer a{
   font-size: 14px;
   text-decoration: none;
-  font-family: Georgia, 'Times New Roman', serif;
 }
 
 
@@ -195,13 +223,11 @@ footer a{
   margin-left: 15%;
   margin-right: 2%;
   width: 25%;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .Homeleft h1 {
   margin-top: 20px;
   margin-bottom: 8px;
-  /*font-family:  'Trebuchet MS', Arial, sans-serif;*/
   font-size: 28px;
 }
 
@@ -212,19 +238,14 @@ footer a{
   font-weight:normal;
   font-size: 20px;
   color: gray;
-  /*font-family:  'Trebuchet MS', Arial, sans-serif;*/
 }
 
 .Homeleft a {
   margin-top: 6px;
   font-size: 18px;
-  /*font-family: Georgia, 'Times New Roman', serif;*/
   line-height: 1.4em;
 }
 
-.Homeleft a:hover {
-  /*font-family: Georgia, 'Times New Roman', serif;*/
-}
 
 .Homeleft p {
   font-size: 13px;
@@ -234,7 +255,6 @@ footer a{
 .contact {
   margin-left: 20%;
   width: 60%;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .contact p {
@@ -246,7 +266,6 @@ footer a{
 #Myinfo a {
   display: inline;
   padding: 5px;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .Homeright {
@@ -254,54 +273,6 @@ footer a{
   margin-right: 15%;
   width: 43%;
   text-align: justify;
-}
-
-
-/* general style*/
-h1 {
-  font-size: 28px;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-h2 {
-  font-size: 20px;
-  font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #00609A;
-  font-family: Georgia, 'Times New Roman', serif;
-}
-a:hover {
-    text-decoration: underline;
-    color: #EAAA10;
-    font-family: Georgia, 'Times New Roman', serif;
-}
-
-a.disabled {
-  pointer-events: none;
-  cursor: default;
-  color: #3A3A3A;
-}
-
-a.abled {
-}
-
-p{
-  font-size: 16px;
-  line-height: 1.4em;
-  color: #3A3A3A;
-  font-family: Georgia, 'Times New Roman', serif;
-}
-
-ul {
-padding-left: 25px;
-}
-
-li {
-  font-size: 16px;
-  font-family: Georgia, 'Times New Roman', serif;
-  margin: 0;
-  line-height: 1.4em;
 }
 
 
@@ -331,7 +302,6 @@ li {
 #research2 li{
    font-size: 16px;
    color: black;
-   font-family: Georgia, 'Times New Roman', serif;
    line-height: 1.4em;
  }
 
@@ -352,10 +322,7 @@ a.button {
   color: white;
   padding: 2px 6px 3px 6px;*/
 }
-a:hover.button {
-  /*border-radius: 10px;*/
-  /*background-color: #EAAA10;*/
-}
+
 
 /* Share  */
 #share-buttons {display: inline-block; vertical-align: middle; }
@@ -698,7 +665,6 @@ a:hover.button {
     color: white;
     font-size: 16px;
     display: inline;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
   }
 
 
