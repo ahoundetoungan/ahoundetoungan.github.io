@@ -146,7 +146,7 @@ footer ul li {
 footer p{
   font-size: 14px;
   display: inline;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   color: #000
 }
@@ -181,7 +181,7 @@ footer a{
 }
 
 #Homepage li{
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 #Homepage ul {
@@ -217,7 +217,7 @@ footer a{
   margin-top: 6px;
   font-size: 18px;
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 .Homeleft a:hover {
@@ -237,7 +237,7 @@ footer a{
 .contact p {
   display: inline;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 #Myinfo a {
@@ -284,7 +284,7 @@ a.abled {
 
 p{
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.4em;
   color: #3A3A3A;
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -297,7 +297,7 @@ li {
   font-size: 16px;
   font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 
@@ -328,7 +328,7 @@ li {
    font-size: 16px;
    color: black;
    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-   line-height: 1.2em;
+   line-height: 1.4em;
  }
 
 #research2 li:not(:last-child) {
@@ -558,7 +558,7 @@ a:hover.button {
   }
   p{
     font-size: 15px;
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
 
   ul {
@@ -567,7 +567,7 @@ a:hover.button {
 
   li {
     font-size: 15px;
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
 }
 
@@ -629,7 +629,7 @@ a:hover.button {
 
   footer p{
     font-size: 13px;
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
 
   footer a{
@@ -644,7 +644,7 @@ a:hover.button {
   }
   p{
     font-size: 15px;
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
 }
 
@@ -785,7 +785,7 @@ a:hover.button {
   li {
     font-size: 14px;
     margin: 0;
-    line-height: 1.2em;
+    line-height: 1.4em;
   }
 
 
