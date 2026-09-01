@@ -14,3 +14,5 @@ vendor/
 *.DS_Store
 research/.Rhistory
 .Rhistory
+.Rproj.user
+ahoundetoungan.github.io.Rproj
